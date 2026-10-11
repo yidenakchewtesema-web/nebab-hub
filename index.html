@@ -1,0 +1,1572 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Nibab Hub</title>
+<script>
+(function(){var ok=false,real=null,mem={};
+try{real=window.localStorage;real.setItem("__t","1");ok=real.getItem("__t")==="1";real.removeItem("__t")}catch(e){ok=false}
+window.__LSOK=ok;
+window.__LS={
+getItem:function(k){try{if(ok){var v=real.getItem(k);if(v!==null)return v}}catch(e){}return Object.prototype.hasOwnProperty.call(mem,k)?mem[k]:null},
+setItem:function(k,v){mem[k]=String(v);try{if(ok)real.setItem(k,String(v))}catch(e){}},
+removeItem:function(k){delete mem[k];try{if(ok)real.removeItem(k)}catch(e){}}};
+})();
+</script>
+<script>try{if(window.__LS.getItem("nh_dark")==="1")document.documentElement.setAttribute("data-theme","dark")}catch(e){}</script>
+<script>if(/tgWebApp/i.test(location.hash+location.search)){document.write('<script src="https://telegram.org/js/telegram-web-app.js"><\/script>')}</script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@400;600;700&family=Noto+Serif+Ethiopic:wght@500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<style>:root{--g:#2f7a66;--gd:#24594a;--gl:#e3efea;--bg:#fff;--t:#17302a;--m:#6e8279;--line:#dbe6e1}*{box-sizing:border-box;margin:0;-webkit-tap-highlight-color:transparent}html,body{height:100%}body{font-family:'Noto Sans Ethiopic',system-ui,sans-serif;background:var(--bg);color:var(--t);display:flex;flex-direction:column;max-width:560px;margin:auto}header{padding:calc(14px + env(safe-area-inset-top)) 18px 10px;display:flex;align-items:center;gap:10px}.logo{width:44px;height:44px;border-radius:50%;object-fit:cover;box-shadow:0 2px 8px rgba(31,85,69,.25);cursor:pointer}header h1{font-size:20px;color:var(--gd)}header small{display:block;color:var(--m);font-size:12px}main{flex:1;overflow-y:auto;padding:0 18px 16px}.sec{display:none}.sec.on{display:block}input,select,button{font:inherit}.search{width:100%;padding:12px 16px;border:1.5px solid var(--line);border-radius:14px;outline:none;background:#f7faf8}.search:focus,.in:focus{border-color:var(--g)}.chips{display:flex;gap:8px;margin:12px 0;overflow-x:auto}.chip{padding:7px 14px;border-radius:99px;border:1.5px solid var(--line);background:#fff;color:var(--m);white-space:nowrap;cursor:pointer;font-size:14px}.chip.on{background:var(--g);border-color:var(--g);color:#fff}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.book{cursor:pointer}.cover{aspect-ratio:3/4;border-radius:12px;padding:14px 12px;color:#fff;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 6px 16px rgba(31,85,69,.18);font-weight:700;line-height:1.3}.cover span{font-size:11px;font-weight:400;opacity:.85}.book h3{font-size:14px;margin-top:8px}.book p{font-size:12px;color:var(--m)}.tag{display:inline-block;margin-top:4px;font-size:11px;background:var(--gl);color:var(--gd);padding:2px 8px;border-radius:99px}.empty{text-align:center;color:var(--m);padding:40px 0}.chat{display:flex;flex-direction:column;height:100%}.msgs{flex:1;overflow-y:auto;display:flex;flex-direction:column;gap:8px;padding:8px 0}.m{max-width:80%;padding:9px 13px;border-radius:16px;background:#f1f5f2;font-size:14px;word-wrap:break-word}.m b{display:block;font-size:11px;color:var(--gd);margin-bottom:2px}.m.me{align-self:flex-end;background:var(--g);color:#fff;border-bottom-right-radius:4px}.m.me b{color:#d1fae5}.m:not(.me){border-bottom-left-radius:4px}.m i{display:block;font-size:10px;opacity:.6;margin-top:3px;font-style:normal;text-align:right}.bar{display:flex;gap:8px;padding-top:8px}.in{flex:1;padding:12px 14px;border:1.5px solid var(--line);border-radius:14px;outline:none;min-width:0}.send{background:var(--g);color:#fff;border:0;border-radius:14px;padding:0 18px;font-weight:700}.row{display:flex;gap:8px;margin-bottom:6px}.row select,.row input{flex:1;padding:9px 12px;border:1.5px solid var(--line);border-radius:12px;background:#fff;min-width:0;font-size:13px}nav{display:flex;border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom);background:#fff}nav button{flex:1;padding:10px 0 8px;border:0;background:none;color:var(--m);font-size:12px;display:flex;flex-direction:column;align-items:center;gap:2px}nav button.on{color:var(--g);font-weight:700}nav svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}#reader{position:fixed;top:0;right:0;bottom:0;left:0;background:#fff;display:none;flex-direction:column;z-index:9;max-width:560px;margin:auto}#reader.on{display:flex}.rh{display:flex;align-items:center;gap:10px;padding:calc(10px + env(safe-area-inset-top)) 14px 10px;background:var(--g);color:#fff}.rh button{background:rgba(255,255,255,.2);border:0;color:#fff;border-radius:10px;width:36px;height:36px;font-size:18px}.rh div{font-weight:600;font-size:15px;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}#frame{flex:1;border:0;width:100%}.pick{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:30px;text-align:center;color:var(--m)}.btn{background:var(--g);color:#fff;padding:12px 22px;border-radius:14px;font-weight:700;cursor:pointer;border:0}[hidden]{display:none!important}#admin{position:fixed;top:0;right:0;bottom:0;left:0;background:#fff;display:none;flex-direction:column;z-index:10;max-width:560px;margin:auto}#admin.on{display:flex}.ab{padding:18px;overflow-y:auto}#agate,#alogin,#apanel{display:flex;flex-direction:column;gap:10px}.ab h3{color:var(--gd);font-size:16px;margin-top:6px}.ab input,.ab select{padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;font-size:14px;background:#fff}.ai{display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid var(--line);font-size:14px}.ai span{flex:1}.note{background:#fef9c3;color:#854d0e;border-radius:12px;padding:10px 12px;font-size:13px;margin-bottom:10px}.ai button{border:0;background:#fee2e2;color:#b91c1c;border-radius:8px;padding:6px 12px}html{background:#fff;overscroll-behavior:none;color-scheme:light}@supports(height:100dvh){html,body{height:100dvh}}body{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;touch-action:manipulation}input,select,textarea,.m{-webkit-user-select:text;user-select:text}main,.msgs,.ab{scrollbar-width:none}main::-webkit-scrollbar,.msgs::-webkit-scrollbar,.ab::-webkit-scrollbar{display:none}.sec.chat{display:none}.sec.chat.on{display:flex}img.cover{display:block;width:100%;object-fit:cover;padding:0}.cv{position:relative;display:flex;align-items:center;justify-content:center;width:150px;aspect-ratio:3/4;border:1.5px dashed var(--g);border-radius:12px;overflow:hidden;color:var(--gd);font-size:13px;text-align:center;background:var(--gl);cursor:pointer}.cv img{position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;object-fit:cover;display:none}#splash{position:fixed;top:0;right:0;bottom:0;left:0;z-index:100;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;transition:opacity .5s}#splash.out{opacity:0;pointer-events:none}.ring{position:relative;width:128px;height:128px}.ring::before,.ring::after{content:"";position:absolute;top:0;right:0;bottom:0;left:0;border-radius:50%;border:2px solid var(--g);opacity:0;animation:rip 2s ease-out infinite}.ring::after{animation-delay:.9s}.ring img{position:relative;width:128px;height:128px;border-radius:50%;box-shadow:0 8px 24px rgba(31,85,69,.3);animation:pop .8s cubic-bezier(.2,1.4,.4,1) both}#splash h2{color:var(--gd);font-size:24px;animation:up .7s .5s both}#splash p{color:var(--m);font-size:13px;margin-top:-8px;animation:up .7s .7s both}@keyframes pop{from{transform:scale(.4) rotate(-12deg);opacity:0}to{transform:none;opacity:1}}@keyframes up{from{transform:translateY(12px);opacity:0}to{transform:none;opacity:1}}@keyframes rip{0%{transform:scale(.9);opacity:.6}100%{transform:scale(1.7);opacity:0}}.hero2{display:flex;justify-content:space-between;align-items:center;background:linear-gradient(135deg,#2f7a66,#1f5545);color:#fff;border-radius:18px;padding:16px 18px;margin-bottom:14px}.hero2 small{display:block;opacity:.85;font-size:13px}.hero2 b{display:block;font-size:19px;margin:2px 0 4px}.hero2 p{font-size:12px;opacity:.9;line-height:1.5}.hero2 span{font-size:34px;margin-left:10px}.sh{font-size:15px;color:var(--gd);margin:16px 0 8px}.row{display:flex;gap:12px;overflow-x:auto;padding-bottom:6px;scrollbar-width:none}.row::-webkit-scrollbar{display:none}.row .book{flex:none;width:112px}.row .book h3,.row .book p{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.row .tag{display:none}.row .cover{font-size:12px;padding:10px 8px}#abt .hero{text-align:center;padding:4px 0 18px}#abt .hero img{width:96px;height:96px;border-radius:50%;box-shadow:0 8px 22px rgba(31,85,69,.28)}#abt .hero h1{margin-top:12px;font-size:21px;color:var(--gd)}#abt .hero p{margin-top:6px;font-size:14px;color:var(--m);line-height:1.7}#abt h2{font-size:15px;color:var(--gd);margin:20px 0 10px}#abt .card{display:flex;align-items:center;gap:14px;padding:14px 16px;margin-bottom:10px;border:1.5px solid var(--line);border-radius:16px;text-decoration:none;color:inherit;background:#fff;transition:.15s}#abt .card:active{transform:scale(.98);background:var(--gl);border-color:var(--g)}#abt .ic{flex:none;width:46px;height:46px;border-radius:14px;background:var(--gl);color:var(--gd);display:grid;place-items:center}#abt .ic svg{width:24px;height:24px}#abt .tx{flex:1;min-width:0}#abt .tx b{display:block;font-size:15px}#abt .tx span{display:block;font-size:13px;color:var(--m);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}#abt .go{color:var(--g);font-size:20px}#abt details{border:1.5px solid var(--line);border-radius:14px;padding:12px 14px;margin-bottom:8px}#abt summary{font-size:14px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:8px}#abt summary::after{content:"+";color:var(--g);font-size:18px;line-height:1}#abt details[open] summary::after{content:"−"}#abt details p{margin-top:8px;font-size:13px;color:var(--m);line-height:1.7}#abt .share{width:100%;margin-top:14px;padding:14px;border:0;border-radius:14px;background:var(--g);color:#fff;font-weight:700;font-size:15px}#abt .share:active{background:var(--gd)}#abt .ver{text-align:center;color:var(--m);font-size:12px;margin-top:18px}.book{position:relative}.sv{position:absolute;top:8px;right:8px;width:32px;height:32px;border-radius:50%;border:0;background:rgba(255,255,255,.92);color:#2f7a66;font-size:18px;line-height:1;display:grid;place-items:center;box-shadow:0 2px 6px rgba(0,0,0,.18);z-index:2}.sv.on{color:#e11d48}.au,.mk{display:flex;align-items:center;gap:14px;padding:12px 14px;margin-bottom:10px;border:1.5px solid var(--line);border-radius:16px;cursor:pointer}.au:active,.mk:active{background:var(--gl);border-color:var(--g)}.av{flex:none;width:44px;height:44px;border-radius:50%;background:linear-gradient(145deg,#2f7a66,#1f5545);color:#fff;display:grid;place-items:center;font-weight:700;font-size:18px}.au .tx,.mk .tx{flex:1;min-width:0}.au .tx b,.mk .tx b{display:block;font-size:15px}.au .tx span,.mk .tx span{display:block;font-size:13px;color:var(--m)}.au .go{color:var(--g);font-size:20px}.mk .del{border:0;background:#fee2e2;color:#b91c1c;border-radius:8px;width:30px;height:30px}#rnote{background:var(--gl);color:var(--gd);padding:8px 14px;font-size:13px}#bsheet{position:absolute;left:0;right:0;bottom:0;background:#fff;border-radius:20px 20px 0 0;box-shadow:0 -8px 30px rgba(0,0,0,.2);padding:16px 18px calc(16px + env(safe-area-inset-bottom));z-index:3}.bs{display:flex;flex-direction:column;gap:10px}.bs input{padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;font-size:14px}.bs .r{display:flex;gap:8px}.bs .btn{flex:1}#abt .cp{flex:none;font-size:12px;padding:6px 10px;border-radius:99px;background:var(--gl);color:var(--gd);font-weight:600}#toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(84px + env(safe-area-inset-bottom));background:#14231a;color:#fff;padding:10px 16px;border-radius:99px;font-size:13px;z-index:50;max-width:90%;text-align:center}.pb{margin-left:auto;flex:none;width:42px;height:42px;border-radius:50%;border:2px solid var(--gl);background:linear-gradient(145deg,#2f7a66,#1f5545);color:#fff;font-weight:700;font-size:17px;display:grid;place-items:center;box-shadow:0 2px 8px rgba(31,85,69,.25);overflow:hidden}.pb svg{width:22px;height:22px;fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.pg{position:fixed;top:0;right:0;bottom:0;left:0;background:#fff;display:none;flex-direction:column;max-width:560px;margin:auto}.pg.on{display:flex}#prof{z-index:11}#setp{z-index:12}#authpg{position:fixed;top:0;right:0;bottom:0;left:0;z-index:60;max-width:560px;margin:auto;background:linear-gradient(180deg,#f1f7f4 0,#fff 45%);overflow-y:auto;padding:calc(24px + env(safe-area-inset-top)) 22px calc(24px + env(safe-area-inset-bottom));display:none;flex-direction:column;gap:14px}#authpg.on{display:flex}.ahd{text-align:center}.ahd img{width:84px;height:84px;border-radius:50%;box-shadow:0 8px 22px rgba(31,85,69,.3)}.ahd h2{margin-top:10px;color:var(--gd);font-size:24px}#aq{margin-top:8px;min-height:44px;font-size:14px;color:var(--m);line-height:1.7;transition:opacity .4s;font-style:italic}.atabs{display:flex;background:#eaf3ec;border-radius:14px;padding:4px}.atabs button{flex:1;border:0;background:none;padding:10px;border-radius:11px;color:var(--m);font-weight:600}.atabs button.on{background:#fff;color:var(--gd);box-shadow:0 2px 8px rgba(0,0,0,.08)}.af{display:flex;flex-direction:column;gap:10px}.af input{padding:13px 15px;border:1.5px solid var(--line);border-radius:14px;background:#fff;outline:none;font-size:15px}.af input:focus{border-color:var(--g)}.af .btn{padding:14px;text-align:center;font-size:15px}.aerr{color:#b91c1c;font-size:13px;text-align:center}.ben{display:grid;grid-template-columns:1fr 1fr;gap:10px}.ben div{background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:12px;font-size:12.5px;color:var(--m);line-height:1.5}.ben b{display:block;font-size:13.5px;color:var(--gd);margin:2px 0}.ben span{font-size:22px}.lk{background:none;border:0;color:var(--gd);font-size:13px;text-decoration:underline;padding:6px}.pbody{padding:22px 18px;overflow-y:auto;display:flex;flex-direction:column;gap:12px}.pbig{text-align:center}.pbig .av{width:84px;height:84px;font-size:34px;margin:0 auto;box-shadow:0 8px 22px rgba(31,85,69,.28)}.pbig h2{margin-top:10px;color:var(--gd)}.pbig p{color:var(--m);font-size:13px}.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}.stats div{background:var(--gl);border-radius:16px;padding:14px;text-align:center;color:var(--gd);font-size:13px}.stats b{display:block;font-size:24px}.pbtn{display:flex;align-items:center;gap:12px;width:100%;padding:14px 16px;border:1.5px solid var(--line);border-radius:16px;background:#fff;text-align:left;font-size:15px;color:var(--t)}.pbtn:active{background:var(--gl);border-color:var(--g)}.pbtn.red{color:#b91c1c;border-color:#fecaca}.sg{border:1.5px solid var(--line);border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:10px}.sg h3{font-size:14px;color:var(--gd)}.sg input,.sg select{padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;font-size:14px;background:#fff}.sg small{color:var(--m);font-size:12px}#fw{flex:1;position:relative;overflow:hidden}#fw #frame{position:absolute;top:0;left:0;flex:none;transform-origin:0 0}#zb{position:absolute;right:12px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:4;display:flex;align-items:center;gap:2px;background:rgba(20,35,26,.88);color:#fff;border-radius:99px;padding:4px;box-shadow:0 4px 14px rgba(0,0,0,.3)}#zb button{width:38px;height:38px;border:0;border-radius:50%;background:none;color:#fff;font-size:22px;line-height:1}#zb button:active{background:rgba(255,255,255,.2)}#zb span{min-width:48px;text-align:center;font-size:13px;font-weight:600}header h1{font-family:'Noto Serif Ethiopic',serif;font-size:22px;color:var(--g)}.logo{width:54px;height:54px;border:2px solid #fff;box-shadow:0 3px 10px rgba(31,85,69,.35)}.pb{background:linear-gradient(145deg,#d3ebe2,#a8d0c1);color:#1f5545;border:2px solid #e9f4f0;font-family:'Noto Serif Ethiopic',serif}.pb svg{stroke:#1f5545}.hero2{background:linear-gradient(135deg,#3f8672,#24594a);border-radius:22px;padding:20px;box-shadow:0 10px 24px rgba(31,85,69,.25);margin-bottom:16px}.hero2 b{font-family:'Noto Serif Ethiopic',serif;font-size:26px;margin:4px 0 6px}.sbox{position:relative}.sbox svg{position:absolute;right:18px;top:50%;transform:translateY(-50%);width:22px;height:22px;stroke:#2f7a66;fill:none;stroke-width:2;stroke-linecap:round;pointer-events:none}.search{padding:15px 50px 15px 20px;border-radius:99px;background:#eef4f1;border:1.5px solid #dbe6e1;font-size:15px}.chip{display:inline-flex;align-items:center;gap:7px;padding:9px 16px;background:#f2f7f4;border:1.5px solid #d3e2db;color:#35584c;font-weight:600;border-radius:99px}.chip.on{background:#d3e6dd;border-color:#a7c8b9;color:#1f5545}.ci{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}.sh{font-family:'Noto Serif Ethiopic',serif;font-size:19px;color:#1f4d3f;margin:18px 0 10px}.cover{border-radius:16px;box-shadow:0 10px 22px rgba(31,85,69,.22)}.book h3{font-family:'Noto Serif Ethiopic',serif;font-weight:700;color:#17302a;font-size:14.5px;margin-top:10px}.row .book{width:136px}.sv{background:rgba(255,255,255,.88);color:#5f9d89;width:36px;height:36px;top:10px;right:10px}.sv.on{color:#e11d48}.tag{background:#e3efea;color:#24594a}nav{display:block;position:relative;flex:none;container-type:inline-size;width:min(calc(100% - 20px),440px);margin:4px auto calc(8px + env(safe-area-inset-bottom));padding:0;border:0;background:none center/100% 100% no-repeat;filter:drop-shadow(0 6px 8px rgba(0,0,0,.22))}nav button{position:absolute;top:0;height:100%;width:18.8%;padding:0;border:0;background:none;display:block}nav button img,nav button svg.ni{position:absolute;top:10.2%;left:50%;width:72%;height:auto;aspect-ratio:1;transform:translateX(-50%);transition:.2s;fill:initial;stroke:none}nav button span{position:absolute;left:-6%;right:-6%;top:71%;text-align:center;font-size:10.5px;font-size:3.1cqw;font-weight:700;color:#4a6b5e;white-space:nowrap}nav button.on span{color:#1b4a3a}nav button.on img,nav button.on svg.ni{filter:drop-shadow(0 0 5px rgba(47,122,102,.8));transform:translateX(-50%) scale(1.1)}nav::before{content:"";display:block;padding-top:22.373%}nav button.on::after{content:"";position:absolute;bottom:8%;left:50%;width:16%;height:3px;border-radius:3px;background:#2f7a66;transform:translateX(-50%)}.alg{display:flex;justify-content:flex-end}.alg select{padding:7px 14px;border:1.5px solid var(--line);border-radius:99px;background:#fff;font-size:13px;color:var(--gd);outline:none}.sw{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:14px}.sw input{-webkit-appearance:none;appearance:none;width:50px;height:30px;padding:0!important;border:0!important;border-radius:99px;background:#cdd9d3;position:relative;outline:none;transition:.2s;flex:none}.sw input::after{content:"";position:absolute;top:3px;left:3px;width:24px;height:24px;border-radius:50%;background:#fff;box-shadow:0 1px 4px rgba(0,0,0,.3);transition:.2s}.sw input:checked{background:var(--g)}.sw input:checked::after{left:23px}html[data-theme=dark]{--bg:#0f1a16;--t:#e6f0eb;--m:#93a89e;--line:#27382f;--gl:#1b2b24;--g:#3b8f77;--gd:#7fcdb1;color-scheme:dark;background:#0f1a16}[data-theme=dark] body{background:#0f1a16}[data-theme=dark] .search,[data-theme=dark] .in,[data-theme=dark] .row select,[data-theme=dark] .row input,[data-theme=dark] .ab input,[data-theme=dark] .ab select,[data-theme=dark] .af input,[data-theme=dark] .sg input,[data-theme=dark] .sg select,[data-theme=dark] .bs input,[data-theme=dark] .alg select{background:#15231d;color:var(--t);border-color:var(--line)}[data-theme=dark] .sw input{background:#2c4238}[data-theme=dark] .sw input:checked{background:var(--g)}[data-theme=dark] .chip{background:#17261f;border-color:#2a3f35;color:#a9c5b8}[data-theme=dark] .chip.on{background:#24493b;border-color:#3b6f5c;color:#d6efe5}[data-theme=dark] #reader,[data-theme=dark] #admin,[data-theme=dark] .pg,[data-theme=dark] #splash{background:#0f1a16}[data-theme=dark] #authpg{background:linear-gradient(180deg,#12211b,#0f1a16)}[data-theme=dark] #bsheet,[data-theme=dark] #abt .card,[data-theme=dark] #abt details,[data-theme=dark] .au,[data-theme=dark] .mk,[data-theme=dark] .sg,[data-theme=dark] .pbtn,[data-theme=dark] .ben div,[data-theme=dark] .atabs{background:#15231d;border-color:var(--line);color:var(--t)}[data-theme=dark] .stats div{background:#1b2b24;color:#9fd8c2}[data-theme=dark] .atabs button.on{background:#24493b;color:#d6efe5}[data-theme=dark] .sv{background:rgba(20,35,30,.88)}[data-theme=dark] #toast{background:#e6f0eb;color:#14231a}[data-theme=dark] .sh{color:#9fd8c2}[data-theme=dark] header h1{color:#7fcdb1}[data-theme=dark] .book h3{color:var(--t)}[data-theme=dark] .tag,[data-theme=dark] #rnote{background:#1b2b24;color:#8fd0b8}[data-theme=dark] .logo{border-color:#24493b}[data-theme=dark] .sbox svg{stroke:#7fcdb1}[data-theme=dark] #astat{background:#1b2b24!important}[data-theme=dark] .cover{box-shadow:0 10px 22px rgba(0,0,0,.45)}.cw{position:relative;width:100%;padding-top:133.333%}.cw>.cover{position:absolute;top:0;left:0;width:100%;height:100%}
+#boot{position:fixed;left:50%;bottom:calc(14px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:300;background:#14231a;color:#fff;font:12px/1.4 sans-serif;padding:7px 14px;border-radius:99px;max-width:92%;text-align:center;word-break:break-all}
+</style>
+</head>
+<body>
+<div id="boot">⏳ ...</div>
+<div id="splash">
+  <div class="ring"><img id="splashLogo" alt=""></div>
+  <h2>Nibab Hub</h2>
+  <p>የንባብ መድረክ</p>
+</div>
+<script>
+(function(){
+  function gone(){var s=document.getElementById('splash');if(s){s.style.opacity=0;s.style.pointerEvents='none';setTimeout(function(){if(s.parentNode)s.parentNode.removeChild(s)},600)}}
+  setTimeout(gone,4500);
+  window.addEventListener('error',function(e){
+    gone();
+    var d=document.getElementById('boot');if(!d){d=document.createElement('div');d.id='boot';document.body.appendChild(d)}d.style.background='#991b1b';d.textContent='JS error: '+(e.message||'')+' @'+(e.lineno||'')+':'+(e.colno||'');
+  });
+})();
+</script>
+<header>
+  <img class="logo" id="logo" alt="Nibab Hub" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%232f7a66'/%3E%3Cpath d='M22 32h24c4 0 4 3 4 3v36s0-4-4-4H22zM78 32H54c-4 0-4 3-4 3v36s0-4 4-4h24z' fill='%23fff'/%3E%3C/svg%3E">
+  <h1>Nibab Hub<small>የንባብ መድረክ</small></h1>
+  <button class="pb" id="pbtn" aria-label="ፕሮፋይል"></button>
+</header>
+
+<main>
+  <!-- Library -->
+  <section id="lib" class="sec on">
+    <div class="hero2"><div><small id="hgreet"></small><b id="hname"></b><p>ንባብ ለሁሉም — ሀገርኛ እና የተተረጎሙ መጻሕፍት በእጅዎ</p></div><span>📚</span></div>
+    <div class="sbox"><input class="search" id="q" placeholder="መጽሐፍ ወይም ደራሲ ይፈልጉ..."><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></div>
+    <div class="chips" id="cats"></div>
+    <div class="chips" id="chips">
+      <div class="chip on" data-f="all">ሁሉም ዓይነት</div>
+      <div class="chip" data-f="tr">የተተረጎሙ</div>
+      <div class="chip" data-f="lo">የሀገር ውስጥ</div>
+    </div>
+    <div id="home">
+      <h2 class="sh" id="featH">⭐ ተመራጭ መጻሕፍት</h2><div class="row" id="feat"></div>
+      <h2 class="sh">🆕 አዳዲስ መጻሕፍት</h2><div class="row" id="newb"></div>
+      <h2 class="sh">ሁሉም መጻሕፍት</h2>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <input id="name" hidden>
+  <!-- Authors -->
+  <section id="aut" class="sec">
+    <div id="autList"></div>
+    <div id="autDet" hidden>
+      <button class="chip" id="autBack">← ወደ ደራሲዎች</button>
+      <h2 class="sh" id="autName"></h2>
+      <div class="grid" id="autGrid"></div>
+    </div>
+  </section>
+
+  <!-- Saved -->
+  <section id="sav" class="sec">
+    <div class="empty" id="savEmpty">ገና ምንም አላስቀመጡም።<br>በመጽሐፍ ካርድ ላይ ያለውን ♡ ይንኩ።</div>
+    <h2 class="sh" id="savH">♥ የተቀመጡ መጻሕፍት</h2>
+    <div class="grid" id="savGrid"></div>
+    <h2 class="sh" id="markH">🔖 የተመዘገቡ ገጾች</h2>
+    <div id="markList"></div>
+  </section>
+
+  <!-- Student books -->
+  <section id="stu" class="sec">
+    <div class="hero2"><div><small>ለተማሪዎች</small><b>የተማሪ መጻሕፍት</b><p>ለትምህርትዎ የሚሆኑ መጻሕፍት በክፍል ደረጃ ተለይተው ይገኛሉ</p></div><span>🎓</span></div>
+    <div class="sbox"><input class="search" id="sq" placeholder="የተማሪ መጽሐፍ ይፈልጉ..."><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></div>
+    <div class="chips" id="sgr"></div>
+    <div class="grid" id="sgrid"></div>
+  </section>
+
+  <!-- About & Support -->
+  <section id="abt" class="sec">
+    <div class="hero">
+      <img id="abtLogo" alt="Nibab Hub">
+      <h1>ንባብ Hub</h1>
+      <p>የተተረጎሙ እና የሀገር ውስጥ መጻሕፍትን<br>በአንድ ቦታ የምታነቡበት መድረክ።</p>
+    </div>
+    <h2>አግኙን</h2>
+    <a class="card" data-ext href="mailto:nibabhubet@gmail.com?subject=Nibab%20Hub">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg></div>
+      <div class="tx"><b>ኢሜይል</b><span>nibabhubet@gmail.com</span></div><span class="cp" data-copy="nibabhubet@gmail.com">ቅዳ</span><div class="go">›</div>
+    </a>
+    <a class="card" data-ext href="https://t.me/Nibabhubet" target="_blank" rel="noopener">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.5 3.6 2.9 10.8c-.9.4-.9 1 0 1.3l4.7 1.5 1.8 5.6c.2.6.4.8.9.8s.6-.2.9-.5l2.2-2.1 4.5 3.3c.8.5 1.4.2 1.6-.8L23 5c.3-1.2-.4-1.8-1.5-1.4zM8.9 13.1l9.6-6c.5-.3.9-.1.5.2l-8 7.2-.3 3.3-1.8-4.7z"/></svg></div>
+      <div class="tx"><b>ቴሌግራም</b><span>t.me/Nibabhubet</span></div><span class="cp" data-copy="https://t.me/Nibabhubet">ቅዳ</span><div class="go">›</div>
+    </a>
+    <a class="card" data-ext href="https://www.tiktok.com/@Nibabhubet" target="_blank" rel="noopener">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 3c.3 2.4 1.7 3.9 4 4.1v3.1c-1.4.1-2.7-.3-4-1.1v6.1c0 3.9-3.2 6.3-6.4 5.7-2.4-.5-4.1-2.7-3.8-5.3.3-3 3-4.8 5.9-4.3v3.2c-1.4-.4-2.8.4-3 1.7-.2 1.5 1 2.7 2.4 2.5 1.2-.2 1.9-1.1 1.9-2.4V3h3z"/></svg></div>
+      <div class="tx"><b>ቲክቶክ</b><span>@Nibabhubet</span></div><span class="cp" data-copy="https://www.tiktok.com/@Nibabhubet">ቅዳ</span><div class="go">›</div>
+    </a>
+    <h2>ተደጋጋሚ ጥያቄዎች</h2>
+    <details><summary>መጻሕፍትን እንዴት አነባለሁ?</summary><p>በመጻሕፍት ገጽ ላይ የሚፈልጉትን መጽሐፍ ይንኩ፤ ፒዲኤፉ በቀጥታ ይከፈታል። በአፑ ውስጥ ካልታየ በራስጌው ያለውን "↗" ይጫኑ።</p></details>
+    <details><summary>መጽሐፍ እንዲጨመር ብጠይቅ?</summary><p>ከላይ ባሉት አድራሻዎች (ኢሜይል ወይም ቴሌግራም) ያግኙን፤ ጥያቄዎን እንመለከታለን።</p></details>
+    <button class="share" id="share">አፑን ለወዳጅ አጋራ (ሊንክ ቅዳ)</button>
+    <div id="shareLink" style="user-select:text;-webkit-user-select:text;word-break:break-all;text-align:center;font-size:12px;color:var(--m);margin-top:8px"></div>
+    <div id="toast" hidden></div>
+    <div class="ver">Nibab Hub · ስሪት 1.1</div>
+  </section>
+</main>
+
+<nav>
+  <button class="on" data-s="lib" style="left:3.136%"><img data-ic="0" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt=""><span>መጻሕፍት</span></button>
+  <button data-s="aut" style="left:22.034%"><img data-ic="1" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt=""><span>ደራሲዎች</span></button>
+  <button data-s="sav" style="left:40.254%"><img data-ic="2" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt=""><span>የተቀመጡ</span></button>
+  <button data-s="stu" style="left:60.0%"><svg class="ni" viewBox="0 0 120 120"><defs><radialGradient id="sg1" cx=".4" cy=".3" r=".85"><stop offset="0" stop-color="#b3d8c7"/><stop offset="1" stop-color="#4d8d76"/></radialGradient><linearGradient id="sc1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#b4bbb8"/></linearGradient></defs><circle cx="60" cy="60" r="52" fill="url(#sg1)" stroke="#dfe3e1" stroke-width="5"/><path d="M38 62v14c0 6 10 12 22 12s22-6 22-12V62L60 72z" fill="#dfe4e2"/><path d="M60 30 20 49l40 19 40-19z" fill="url(#sc1)"/><path d="M92 53v23" stroke="#d6b25e" stroke-width="3.5" stroke-linecap="round"/><circle cx="92" cy="80" r="5" fill="#d6b25e"/></svg><span>ተማሪ</span></button>
+  <button data-s="abt" style="left:78.39%"><img data-ic="3" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt=""><span>ስለ እኛ</span></button>
+</nav>
+
+<!-- PDF Reader -->
+<div id="reader">
+  <div class="rh"><button id="back">←</button><div id="rt"></div><button id="bm" title="ገጽ አስታውስ">🔖</button><button id="ext" title="በአሳሽ ክፈት">↗</button></div>
+  <div id="rnote" hidden></div>
+  <div id="fw">
+    <iframe id="frame" hidden></iframe>
+    <div id="zb"><button id="zout" aria-label="አሳንስ">−</button><span id="zv">100%</span><button id="zin" aria-label="አሳድግ">+</button></div>
+  </div>
+  <div id="bsheet" hidden>
+    <div class="bs">
+      <b>ገጽ አስታውስ</b>
+      <input id="bpage" type="number" min="1" inputmode="numeric" placeholder="የገጽ ቁጥር">
+      <input id="bnote" placeholder="ማስታወሻ (አማራጭ)" maxlength="60">
+      <div class="r"><button class="btn" id="bsave">አስቀምጥ</button><button class="chip" id="bcancel">ተው</button></div>
+    </div>
+  </div>
+  <div class="pick" id="pick">
+    <div style="font-size:42px">📖</div>
+    <p>ለዚህ መጽሐፍ የፒዲኤፍ ፋይል አልተገናኘም።<br>ከስልክዎ ፒዲኤፍ መርጠው ማንበብ ይችላሉ።</p>
+    <label class="btn">ፒዲኤፍ ክፈት<input type="file" id="file" accept="application/pdf" hidden></label>
+  </div>
+</div>
+
+<!-- Admin (ለአስተዳዳሪ ብቻ፤ ሎጎውን 5 ጊዜ በመንካት ይከፈታል) -->
+<div id="admin">
+  <div class="rh"><button id="aclose">←</button><div>Admin Panel</div></div>
+  <div class="ab">
+    <div id="agate">
+      <h3>የአስተዳዳሪ ይለፍ ቃል</h3>
+      <input id="agpw" type="password" placeholder="ይለፍ ቃል">
+      <div id="agerr" style="color:#b91c1c;font-size:13px" hidden>የይለፍ ቃሉ ትክክል አይደለም</div>
+      <button class="btn" id="agbtn">ግባ</button>
+    </div>
+    <div id="alogin">
+      <h3>የአስተዳዳሪ መግቢያ</h3>
+      <input id="aem" type="email" placeholder="ኢሜይል">
+      <input id="apw" type="password" placeholder="ይለፍ ቃል">
+      <button class="btn" id="alogbtn">ግባ</button>
+    </div>
+    <div id="apanel" hidden>
+      <div id="astat" style="font-size:12px;color:var(--m);background:#f1f5f2;border-radius:10px;padding:8px 10px;word-break:break-word"></div>
+      <h3>አዲስ መጽሐፍ ጨምር</h3>
+      <input id="atitle" placeholder="የመጽሐፍ ርዕስ">
+      <input id="aauthor" placeholder="የደራሲ ስም">
+      <select id="atype"><option value="tr">የተተረጎመ</option><option value="lo">የሀገር ውስጥ</option></select>
+      <select id="acat"></select>
+      <label style="font-size:14px;display:flex;gap:8px;align-items:center"><input type="checkbox" id="afeat" style="width:auto;padding:0"> ⭐ ተመራጭ አድርግ</label>
+      <label style="font-size:14px;display:flex;gap:8px;align-items:center"><input type="checkbox" id="astu" style="width:auto;padding:0"> 🎓 የተማሪ መጽሐፍ</label>
+      <select id="agrade"></select>
+      <label class="cv"><img id="aprev" alt=""><span id="aprevt">📷<br>የሽፋን ፎቶ ምረጥ</span><input id="acover" type="file" accept="image/*" hidden></label>
+      <input id="acoverurl" placeholder="ወይም የሽፋን ፎቶ ሊንክ (https://...)">
+      <input id="apdfurl" placeholder="የፒዲኤፍ ሊንክ (https://... ወይም Google Drive)">
+      <small style="color:var(--m)">ወይም ፒዲኤፍ ከስልክ ይጫኑ (Firebase Storage ያስፈልጋል)፦</small>
+      <input id="apdf" type="file" accept="application/pdf,.pdf">
+      <small id="aprog" style="color:var(--m)"></small>
+      <button class="btn" id="aadd">ጨምር</button>
+      <h3>ያሉ መጻሕፍት</h3>
+      <div id="alist"></div>
+      <button class="chip" id="aout">ውጣ</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ አዲስ፦ ምዝገባ / መግቢያ ═══ -->
+<div id="authpg" class="on">
+  <div class="alg"><select id="alang"><option value="am">አማርኛ</option><option value="en">English</option><option value="om">Afaan Oromoo</option><option value="ti">ትግርኛ</option></select></div>
+  <div class="ahd">
+    <img id="aLogo" alt="">
+    <h2>Nibab Hub</h2>
+    <p id="aq"></p>
+  </div>
+  <div class="atabs"><button data-t="login">ግባ</button><button class="on" data-t="reg">ተመዝገብ</button></div>
+
+  <div class="af" id="fLogin" hidden>
+    <input id="lem" type="email" placeholder="ኢሜይል" autocomplete="email">
+    <input id="lpw" type="password" placeholder="ይለፍ ቃል" autocomplete="current-password">
+    <div class="aerr" id="lerr" hidden></div>
+    <button class="btn" id="lbtn">ግባ</button>
+    <button class="lk" id="lforgot">ይለፍ ቃል ረሱ?</button>
+  </div>
+
+  <div class="af" id="fReg">
+    <div class="ben">
+      <div><span>📚</span><b>ሰፊ ቤተ መጻሕፍት</b>ሀገርኛ እና የተተረጎሙ መጻሕፍት በአንድ ቦታ</div>
+      <div><span>🔖</span><b>ያቆሙበትን ያስታውሳል</b>ገጾችን ምልክት ያድርጉ፣ በኋላ ይቀጥሉ</div>
+      <div><span>♥</span><b>የራስዎ መደርደሪያ</b>የሚወዷቸውን መጻሕፍት ያስቀምጡ</div>
+      <div><span>🎓</span><b>የተማሪ መጻሕፍት</b>ለትምህርትዎ የሚሆኑ መጻሕፍት በክፍል ደረጃ</div>
+    </div>
+    <input id="rnm" placeholder="ሙሉ ስም" maxlength="20" autocomplete="name">
+    <input id="rem" type="email" placeholder="ኢሜይል" autocomplete="email">
+    <input id="rpw" type="password" placeholder="ይለፍ ቃል (ቢያንስ 6 ቁምፊ)" autocomplete="new-password">
+    <input id="rpw2" type="password" placeholder="ይለፍ ቃል ደግመው ይጻፉ" autocomplete="new-password">
+    <div class="aerr" id="rerr" hidden></div>
+    <button class="btn" id="rbtn">መለያ ክፈት</button>
+    <p style="text-align:center;font-size:12px;color:var(--m);line-height:1.7">“ንባብ ዓለምን የሚያሰፋ መስኮት ነው።”<br>ዛሬ ይጀምሩ — አንድ ገጽ እንኳ ቢሆን።</p>
+  </div>
+</div>
+
+<!-- ═══ አዲስ፦ ፕሮፋይል ═══ -->
+<div class="pg" id="prof">
+  <div class="rh"><button id="pclose">←</button><div>ፕሮፋይል</div></div>
+  <div class="pbody">
+    <div class="pbig"><div class="av" id="pav"></div><h2 id="pnm"></h2><p id="pem"></p></div>
+    <div class="stats"><div><b id="pst1">0</b>የተቀመጡ መጻሕፍት</div><div><b id="pst2">0</b>የተመዘገቡ ገጾች</div></div>
+    <button class="pbtn" id="pset">⚙️ ቅንብሮች</button>
+    <button class="pbtn" id="plogin">🔐 ግባ / ተመዝገብ</button>
+    <button class="pbtn red" id="plogout">🚪 ውጣ</button>
+  </div>
+</div>
+
+<!-- ═══ አዲስ፦ ቅንብሮች ═══ -->
+<div class="pg" id="setp">
+  <div class="rh"><button id="sclose">←</button><div>ቅንብሮች</div></div>
+  <div class="pbody">
+    <div class="sg"><h3>🌐 ቋንቋ (Language)</h3>
+      <select id="slang"><option value="am">አማርኛ</option><option value="en">English</option><option value="om">Afaan Oromoo</option><option value="ti">ትግርኛ</option></select>
+      <small>የተመረጠው ቋንቋ ወዲያውኑ ይተገበራል።</small></div>
+    <div class="sg"><h3>🎨 ገጽታ</h3>
+      <label class="sw"><span>🌙 ጨለማ ገጽታ (Dark Mode)</span><input type="checkbox" id="sdark"></label></div>
+    <div class="sg" id="sgName">
+      <h3>👤 መገለጫ</h3>
+      <input id="snm" placeholder="ስምዎ" maxlength="20">
+      <button class="btn" id="snsave">ስም አስቀምጥ</button>
+    </div>
+    <div class="sg">
+      <h3>🔍 የንባብ መጠን (Zoom)</h3>
+      <select id="szoom"><option value="0.75">75%</option><option value="1">100% (መደበኛ)</option><option value="1.25">125%</option><option value="1.5">150%</option><option value="1.75">175%</option><option value="2">200%</option></select>
+      <small>መጽሐፍ ሲያነቡ በታች በቀኝ ያሉትን − እና + በመጠቀም መጠኑን መቀየር ይችላሉ።</small>
+    </div>
+    <div class="sg">
+      <h3>🗂 መረጃ</h3>
+      <button class="pbtn" id="sclrsv">♥ የተቀመጡ መጻሕፍትን አጽዳ</button>
+      <button class="pbtn" id="sclrmk">🔖 የተመዘገቡ ገጾችን አጽዳ</button>
+    </div>
+    <p style="text-align:center;color:var(--m);font-size:12px">Nibab Hub · ስሪት 1.1</p>
+  </div>
+</div>
+
+<script>
+"use strict";
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g = Object.create((typeof Iterator === "function" ? Iterator : Object).prototype);
+    return g.next = verb(0), g["throw"] = verb(1), g["return"] = verb(2), typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (g && (g = 0, op[0] && (_ = 0)), _) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+var __read = (this && this.__read) || function (o, n) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator];
+    if (!m) return o;
+    var i = m.call(o), r, ar = [], e;
+    try {
+        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
+    }
+    catch (error) { e = { error: error }; }
+    finally {
+        try {
+            if (r && !r.done && (m = i["return"])) m.call(i);
+        }
+        finally { if (e) throw e.error; }
+    }
+    return ar;
+};
+var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+};
+var __values = (this && this.__values) || function(o) {
+    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
+    if (m) return m.call(o);
+    if (o && typeof o.length === "number") return {
+        next: function () {
+            if (o && i >= o.length) o = void 0;
+            return { value: o && o[i++], done: !o };
+        }
+    };
+    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
+};
+(function () {
+    var _this = this;
+    var localStorage = window.__LS;
+    var __b = document.getElementById("boot");
+    if (__b && __b.parentNode)
+        __b.parentNode.removeChild(__b);
+    function imp(u) { try {
+        return (new Function("u", "return import(u)"))(u);
+    }
+    catch (e) {
+        return Promise.reject(e);
+    } }
+    /* ═══════════════════════════════════════════════
+       ① FIREBASE CONFIG
+       ═══════════════════════════════════════════════ */
+    var FIREBASE_CONFIG = {
+        apiKey: "AIzaSyBP2ApvCKay1P6BK0upnvByK4u79D58AW4",
+        authDomain: "nibab-hub.firebaseapp.com",
+        projectId: "nibab-hub",
+        storageBucket: "nibab-hub.firebasestorage.app",
+        messagingSenderId: "840085695206",
+        appId:"1:840085695206:web:6694262632f0890b48a927",
+  measurementId:"G-W22Q1BJSYM"
+    };
+    var TG = window.Telegram && Telegram.WebApp && Telegram.WebApp.initData !== undefined ? Telegram.WebApp : null;
+    if (TG) {
+        try {
+            TG.ready();
+            TG.expand();
+            TG.setHeaderColor("#ffffff");
+            TG.setBackgroundColor("#ffffff");
+            TG.disableVerticalSwipes && TG.disableVerticalSwipes();
+        }
+        catch (e) { }
+    }
+    function sha256hex(s) {
+        var K = sha256hex.K, i, j, n, p;
+        if (!K) {
+            K = sha256hex.K = [];
+            n = 2;
+            while (K.length < 64) {
+                p = true;
+                for (i = 2; i * i <= n; i++)
+                    if (n % i === 0) {
+                        p = false;
+                        break;
+                    }
+                if (p)
+                    K.push(Math.floor((Math.pow(n, 1 / 3) % 1) * 4294967296));
+                n++;
+            }
+        }
+        var u = unescape(encodeURIComponent(s)), b = [];
+        for (i = 0; i < u.length; i++)
+            b.push(u.charCodeAt(i));
+        var bl = b.length * 8;
+        b.push(128);
+        while (b.length % 64 !== 56)
+            b.push(0);
+        b.push(0, 0, 0, 0, (bl >>> 24) & 255, (bl >>> 16) & 255, (bl >>> 8) & 255, bl & 255);
+        var H = [1779033703, 3144134277, 1013904242, 2773480762, 1359893119, 2600822924, 528734635, 1541459225], W = new Array(64);
+        for (var o = 0; o < b.length; o += 64) {
+            for (i = 0; i < 16; i++)
+                W[i] = (b[o + 4 * i] << 24) | (b[o + 4 * i + 1] << 16) | (b[o + 4 * i + 2] << 8) | b[o + 4 * i + 3];
+            for (i = 16; i < 64; i++) {
+                var x = W[i - 15], y = W[i - 2];
+                W[i] = (W[i - 16] + (((x >>> 7) | (x << 25)) ^ ((x >>> 18) | (x << 14)) ^ (x >>> 3)) + W[i - 7] + (((y >>> 17) | (y << 15)) ^ ((y >>> 19) | (y << 13)) ^ (y >>> 10))) | 0;
+            }
+            var A = H[0], B = H[1], C = H[2], D = H[3], E1 = H[4], F1 = H[5], G = H[6], Hh = H[7];
+            for (i = 0; i < 64; i++) {
+                var t1 = (Hh + (((E1 >>> 6) | (E1 << 26)) ^ ((E1 >>> 11) | (E1 << 21)) ^ ((E1 >>> 25) | (E1 << 7))) + ((E1 & F1) ^ (~E1 & G)) + K[i] + W[i]) | 0;
+                var t2 = ((((A >>> 2) | (A << 30)) ^ ((A >>> 13) | (A << 19)) ^ ((A >>> 22) | (A << 10))) + ((A & B) ^ (A & C) ^ (B & C))) | 0;
+                Hh = G;
+                G = F1;
+                F1 = E1;
+                E1 = (D + t1) | 0;
+                D = C;
+                C = B;
+                B = A;
+                A = (t1 + t2) | 0;
+            }
+            H[0] = (H[0] + A) | 0;
+            H[1] = (H[1] + B) | 0;
+            H[2] = (H[2] + C) | 0;
+            H[3] = (H[3] + D) | 0;
+            H[4] = (H[4] + E1) | 0;
+            H[5] = (H[5] + F1) | 0;
+            H[6] = (H[6] + G) | 0;
+            H[7] = (H[7] + Hh) | 0;
+        }
+        return H.map(function (v) { return ("00000000" + (v >>> 0).toString(16)).slice(-8); }).join("");
+    }
+    var ADM_SALT = "51bddd36d1e0918b", ADM_HASH = "3b0629b5105b6231250d2ab725a7bcce487ab71f9d32560be3c8a356321af434", ADM_N = 20000;
+    function admHash(pw) { var h = sha256hex(ADM_SALT + ":" + pw); for (var i = 0; i < ADM_N; i++)
+        h = sha256hex(h + ":" + ADM_SALT + ":" + pw); return h; }
+    window.nhHash = admHash;
+    var BOOKS = [];
+    var $ = function (s) { return document.querySelector(s); }, $$ = function (s) { return __spreadArray([], __read(document.querySelectorAll(s)), false); };
+    var filter = "all", cat = "all";
+    var SAVED = [], MARKS = [], AUTH = [], curAuthName = "", curBook = null;
+    try {
+        SAVED = JSON.parse(localStorage.getItem("nh_saved") || "[]");
+        MARKS = JSON.parse(localStorage.getItem("nh_marks") || "[]");
+    }
+    catch (e) { }
+    var CATS = ["ታሪክ", "ልብ ወለድ", "ግጥም", "ሃይማኖት", "ሳይንስ", "የልጆች", "ሌላ"];
+    var ICONS = {
+        all: '<path d="M4 19V5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2zm0 0a2 2 0 0 0 2 2h13"/>',
+        tr: '<path d="M4 5h9M8.5 3v2M6 5c0 4 3 7 7 8M12 5c0 4-3 7-7 8M14 21l4-9 4 9M15.5 18h5"/>',
+        lo: '<path d="m3 11 9-8 9 8M5 10v10h14V10M10 20v-6h4v6"/>',
+        "ታሪክ": '<path d="M8 4h10a2 2 0 0 1 2 2v1H10M8 4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7M9 11h7M9 15h5"/>',
+        "ልብ ወለድ": '<path d="M4 5h9v7a4.5 4.5 0 0 1-9 0zM7.5 10h.01M10.5 10h.01M7.5 13.5c.8.7 2.2.7 3 0M15 9h5v6a4 4 0 0 1-5.5 3.7"/>',
+        "ግጥም": '<path d="M20 4c-8 0-13 5-14 14M20 4c0 7-5 11-12 11M6 18l-2 3M9 12h6"/>',
+        "ሃይማኖት": '<path d="m12 3 2.6 5.6 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L3.4 9.4l6-.8z"/>',
+        "ሳይንስ": '<path d="M9 3h6M10 3v6L5 19a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2l-5-10V3M8 15h8"/>',
+        "የልጆች": '<circle cx="12" cy="12" r="9"/><path d="M8 14c1 2 2.5 3 4 3s3-1 4-3M9 9.5h.01M15 9.5h.01"/>',
+        other: '<circle cx="6" cy="12" r="1.2"/><circle cx="12" cy="12" r="1.2"/><circle cx="18" cy="12" r="1.2"/>'
+    };
+    ICONS["ሌላ"] = ICONS.other;
+    var ico = function (k) { return "<svg class=\"ci\" viewBox=\"0 0 24 24\">".concat(ICONS[k] || ICONS.other, "</svg>"); };
+    var PH = "data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 3 4%22%3E%3Crect width=%223%22 height=%224%22 fill=%22%232f7a66%22/%3E%3C/svg%3E";
+    var E = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]); }); };
+    var I18N = { "en": { "የንባብ መድረክ": "Reading Platform", "ንባብ ለሁሉም — ሀገርኛ እና የተተረጎሙ መጻሕፍት በእጅዎ": "Reading for everyone — local and translated books at your fingertips", "ሁሉም ዓይነት": "All types", "የተተረጎሙ": "Translated", "የሀገር ውስጥ": "Local", "ሁሉም ምድቦች": "All categories", "⭐ ተመራጭ መጻሕፍት": "⭐ Recommended Books", "🆕 አዳዲስ መጻሕፍት": "🆕 New Books", "ሁሉም መጻሕፍት": "All Books", "← ወደ ደራሲዎች": "← Back to authors", "ገና ምንም አላስቀመጡም።": "You haven't saved anything yet.", "በመጽሐፍ ካርድ ላይ ያለውን ♡ ይንኩ።": "Tap the ♡ on a book card.", "♥ የተቀመጡ መጻሕፍት": "♥ Saved Books", "🔖 የተመዘገቡ ገጾች": "🔖 Bookmarked Pages", "ለተማሪዎች": "For students", "የተማሪ መጻሕፍት": "Student Books", "ለትምህርትዎ የሚሆኑ መጻሕፍት በክፍል ደረጃ ተለይተው ይገኛሉ": "Books for your studies, organized by grade level", "ንባብ Hub": "Nibab Hub", "የተተረጎሙ እና የሀገር ውስጥ መጻሕፍትን": "Translated and local books", "በአንድ ቦታ የምታነቡበት መድረክ።": "a platform to read them in one place.", "አግኙን": "Contact us", "ኢሜይል": "Email", "ቅዳ": "Copy", "ቴሌግራም": "Telegram", "ቲክቶክ": "TikTok", "ተደጋጋሚ ጥያቄዎች": "FAQ", "መጻሕፍትን እንዴት አነባለሁ?": "How do I read books?", "በመጻሕፍት ገጽ ላይ የሚፈልጉትን መጽሐፍ ይንኩ፤ ፒዲኤፉ በቀጥታ ይከፈታል። በአፑ ውስጥ ካልታየ በራስጌው ያለውን \"↗\" ይጫኑ።": "Tap the book you want on the Books page and the PDF opens directly. If it doesn't show inside the app, tap \"↗\" in the header.", "መጽሐፍ እንዲጨመር ብጠይቅ?": "What if I request a book to be added?", "ከላይ ባሉት አድራሻዎች (ኢሜይል ወይም ቴሌግራም) ያግኙን፤ ጥያቄዎን እንመለከታለን።": "Contact us through the addresses above (email or Telegram); we'll review your request.", "አፑን ለወዳጅ አጋራ (ሊንክ ቅዳ)": "Share the app with a friend (copy link)", "Nibab Hub · ስሪት 1.1": "Nibab Hub · Version 1.1", "መጻሕፍት": "Books", "ደራሲዎች": "Authors", "የተቀመጡ": "Saved", "ተማሪ": "Student", "ስለ እኛ": "About us", "ገጽ አስታውስ": "Bookmark page", "አስቀምጥ": "Save", "ተው": "Cancel", "ለዚህ መጽሐፍ የፒዲኤፍ ፋይል አልተገናኘም።": "No PDF file is linked to this book.", "ከስልክዎ ፒዲኤፍ መርጠው ማንበብ ይችላሉ።": "You can pick a PDF from your phone to read.", "ፒዲኤፍ ክፈት": "Open PDF", "ግባ": "Log in", "ተመዝገብ": "Sign up", "ይለፍ ቃል ረሱ?": "Forgot password?", "ሰፊ ቤተ መጻሕፍት": "A rich library", "ሀገርኛ እና የተተረጎሙ መጻሕፍት በአንድ ቦታ": "Local and translated books in one place", "ያቆሙበትን ያስታውሳል": "Remembers where you stopped", "ገጾችን ምልክት ያድርጉ፣ በኋላ ይቀጥሉ": "Bookmark pages, continue later", "የራስዎ መደርደሪያ": "Your own shelf", "የሚወዷቸውን መጻሕፍት ያስቀምጡ": "Save the books you love", "ለትምህርትዎ የሚሆኑ መጻሕፍት በክፍል ደረጃ": "Books for your studies by grade", "መለያ ክፈት": "Create account", "“ንባብ ዓለምን የሚያሰፋ መስኮት ነው።”": "“Reading is a window that widens the world.”", "ዛሬ ይጀምሩ — አንድ ገጽ እንኳ ቢሆን።": "Start today — even if it's just one page.", "ፕሮፋይል": "Profile", "የተቀመጡ መጻሕፍት": "Saved books", "የተመዘገቡ ገጾች": "Bookmarked pages", "⚙️ ቅንብሮች": "⚙️ Settings", "🔐 ግባ / ተመዝገብ": "🔐 Log in / Sign up", "🚪 ውጣ": "🚪 Log out", "ቅንብሮች": "Settings", "👤 መገለጫ": "👤 Profile", "ስም አስቀምጥ": "Save name", "🔍 የንባብ መጠን (Zoom)": "🔍 Reading size (Zoom)", "100% (መደበኛ)": "100% (Default)", "መጽሐፍ ሲያነቡ በታች በቀኝ ያሉትን − እና + በመጠቀም መጠኑን መቀየር ይችላሉ።": "While reading, use the − and + buttons at the bottom right to change the size.", "🗂 መረጃ": "🗂 Data", "♥ የተቀመጡ መጻሕፍትን አጽዳ": "♥ Clear saved books", "🔖 የተመዘገቡ ገጾችን አጽዳ": "🔖 Clear bookmarked pages", "መጽሐፍ ወይም ደራሲ ይፈልጉ...": "Search a book or author...", "የተማሪ መጽሐፍ ይፈልጉ...": "Search student books...", "በአሳሽ ክፈት": "Open in browser", "አሳንስ": "Zoom out", "አሳድግ": "Zoom in", "የገጽ ቁጥር": "Page number", "ማስታወሻ (አማራጭ)": "Note (optional)", "ይለፍ ቃል": "Password", "ሙሉ ስም": "Full name", "ይለፍ ቃል (ቢያንስ 6 ቁምፊ)": "Password (at least 6 characters)", "ይለፍ ቃል ደግመው ይጻፉ": "Re-enter password", "ስምዎ": "Your name", "ታሪክ": "History", "ልብ ወለድ": "Fiction", "ግጥም": "Poetry", "ሃይማኖት": "Religion", "ሳይንስ": "Science", "የልጆች": "Children's", "ሌላ": "Other", "ምንም መጽሐፍ አልተገኘም": "No books found", "ገና ደራሲ የለም": "No authors yet", "ገና የተማሪ መጽሐፍ አልተጨመረም": "No student books added yet", "ሁሉም ክፍሎች": "All grades", "1–4ኛ ክፍል": "Grades 1–4", "5–8ኛ ክፍል": "Grades 5–8", "9–10ኛ ክፍል": "Grades 9–10", "11–12ኛ ክፍል": "Grades 11–12", "ዩኒቨርሲቲ": "University", "የተማሪ": "Student", "እንደምን አደሩ": "Good morning", "እንደምን ዋሉ": "Good afternoon", "እንደምን አመሸዎት": "Good evening", "የንባብ ወዳጅ": "Reading friend", "“አንድ መጽሐፍ፣ አንድ አዲስ ዓለም።”": "“One book, one new world.”", "“ዛሬ የሚያነቡት ገጽ ነገ የሚኖሩትን ሕይወት ይቀርጻል።”": "“The page you read today shapes the life you live tomorrow.”", "“አንባቢ ሺህ ሕይወት ይኖራል፤ የማያነብ አንድ ብቻ።”": "“A reader lives a thousand lives; one who doesn't read, only one.”", "“በቀን አሥር ደቂቃ ንባብ — በዓመት ብዙ መጻሕፍት።”": "“Ten minutes of reading a day — many books a year.”", "“ሀገርኛ ታሪክን ያንብቡ፤ የተተረጎሙትን ይጎብኙ።”": "“Read local stories; explore the translated ones.”", "ይህ ኢሜይል ቀድሞ ተመዝግቧል": "This email is already registered", "ኢሜይሉ ትክክል አይደለም": "The email is not valid", "ይለፍ ቃል ቢያንስ 6 ቁምፊ መሆን አለበት": "Password must be at least 6 characters", "ብዙ ሙከራ ተደርጓል — ቆይተው ይሞክሩ": "Too many attempts — try again later", "ኢንተርኔትዎን ያረጋግጡ": "Check your internet connection", "ኢሜይል ወይም ይለፍ ቃል ትክክል አይደለም": "Email or password is incorrect", "አንባቢ": "Reader", "እንግዳ": "Guest", "ገና አልገቡም": "Not signed in yet", "ኢሜይል እና ይለፍ ቃል ያስገቡ": "Enter email and password", "✅ እንኳን ደህና መጡ!": "✅ Welcome!", "መለያ አልተገኘም — መጀመሪያ ይመዝገቡ": "Account not found — please sign up first", "መጀመሪያ ኢሜይልዎን ይጻፉ": "Enter your email first", "✅ የይለፍ ቃል መቀየሪያ ሊንክ ወደ ኢሜይልዎ ተልኳል": "✅ A password reset link has been sent to your email", "ሁሉንም መስኮች ይሙሉ": "Fill in all fields", "ሁለቱ ይለፍ ቃሎች አይመሳሰሉም": "The two passwords don't match", "ይህ ኢሜይል ቀድሞ ተመዝግቧል — 'ግባ' ን ይጠቀሙ": "This email is already registered — use 'Log in'", "ከመለያዎ ይውጡ?": "Log out of your account?", "✅ ስምዎ ተቀይሯል": "✅ Your name has been changed", "መቀየር አልተቻለም": "Could not change", "ሁሉም የተቀመጡ መጻሕፍት ይጽዱ?": "Clear all saved books?", "ሁሉም የተመዘገቡ ገጾች ይጽዱ?": "Clear all bookmarked pages?", "✅ ተቀድቷል": "✅ Copied", "መቅዳት አልተቻለም — ሊንኩን በረጅሙ ተጭነው ይቅዱ": "Couldn't copy — long-press the link to copy it", "✅ ሊንኩ ተቀድቷል — አሁን መለጠፍ ይችላሉ": "✅ Link copied — you can paste it now", "መቅዳት አልተቻለም — ከታች ያለውን ሊንክ በረጅሙ ተጭነው ይቅዱ": "Couldn't copy — long-press the link below to copy it", "🌐 ቋንቋ (Language)": "🌐 Language", "🎨 ገጽታ": "🎨 Appearance", "🌙 ጨለማ ገጽታ (Dark Mode)": "🌙 Dark mode", "የተመረጠው ቋንቋ ወዲያውኑ ይተገበራል።": "The chosen language applies immediately." }, "om": { "የንባብ መድረክ": "Waltajjii Dubbisaa", "ንባብ ለሁሉም — ሀገርኛ እና የተተረጎሙ መጻሕፍት በእጅዎ": "Dubbisuun nama hundaaf — kitaabota biyyaalessaa fi hiikaman harka keessanitti", "ሁሉም ዓይነት": "Gosa hunda", "የተተረጎሙ": "Kan hiikaman", "የሀገር ውስጥ": "Kan biyya keessaa", "ሁሉም ምድቦች": "Ramaddii hunda", "⭐ ተመራጭ መጻሕፍት": "⭐ Kitaabota Filatamoo", "🆕 አዳዲስ መጻሕፍት": "🆕 Kitaabota Haaraa", "ሁሉም መጻሕፍት": "Kitaabota Hunda", "← ወደ ደራሲዎች": "← Gara barreessitootaatti", "ገና ምንም አላስቀመጡም።": "Amma tokkollee hin olkaa'in.", "በመጽሐፍ ካርድ ላይ ያለውን ♡ ይንኩ።": "♡ kaardii kitaabaa irra jiru tuqaa.", "♥ የተቀመጡ መጻሕፍት": "♥ Kitaabota Olkaa'aman", "🔖 የተመዘገቡ ገጾች": "🔖 Fuulota Mallattoo'aman", "ለተማሪዎች": "Barattootaaf", "የተማሪ መጻሕፍት": "Kitaabota Barattootaa", "ለትምህርትዎ የሚሆኑ መጻሕፍት በክፍል ደረጃ ተለይተው ይገኛሉ": "Kitaabonni barnoota keessaniif ta'an sadarkaa kutaatiin adda baafamanii argamu", "ንባብ Hub": "Nibab Hub", "የተተረጎሙ እና የሀገር ውስጥ መጻሕፍትን": "Kitaabota hiikaman fi kan biyya keessaa", "በአንድ ቦታ የምታነቡበት መድረክ።": "waltajjii iddoo tokkotti itti dubbistan.", "አግኙን": "Nu quunnamaa", "ኢሜይል": "Imeelii", "ቅዳ": "Waraabi", "ቴሌግራም": "Teleegiraam", "ቲክቶክ": "TikTok", "ተደጋጋሚ ጥያቄዎች": "Gaaffilee Yeroo Baay'ee Gaafataman", "መጻሕፍትን እንዴት አነባለሁ?": "Kitaabota akkamittan dubbisa?", "በመጻሕፍት ገጽ ላይ የሚፈልጉትን መጽሐፍ ይንኩ፤ ፒዲኤፉ በቀጥታ ይከፈታል። በአፑ ውስጥ ካልታየ በራስጌው ያለውን \"↗\" ይጫኑ።": "Fuula kitaabotaa irratti kitaaba barbaaddan tuqaa; PDF'n kallattiin banama. Yoo app keessatti hin mul'anne, mallattoo \"↗\" mataduree irra jiru tuqaa.", "መጽሐፍ እንዲጨመር ብጠይቅ?": "Kitaabni akka dabalamu yoon gaafadhe?", "ከላይ ባሉት አድራሻዎች (ኢሜይል ወይም ቴሌግራም) ያግኙን፤ ጥያቄዎን እንመለከታለን።": "Teessoo olitti argaman (imeelii yookaan Teleegiraam) irratti nu quunnamaa; gaaffii keessan ni ilaalla.", "አፑን ለወዳጅ አጋራ (ሊንክ ቅዳ)": "App kana hiriyaaf qoodaa (liinkii waraabaa)", "Nibab Hub · ስሪት 1.1": "Nibab Hub · Gosa 1.1", "መጻሕፍት": "Kitaabota", "ደራሲዎች": "Barreessitoota", "የተቀመጡ": "Kan olkaa'aman", "ተማሪ": "Barataa", "ስለ እኛ": "Waa'ee keenya", "ገጽ አስታውስ": "Fuula yaadadhu", "አስቀምጥ": "Olkaa'i", "ተው": "Dhiisi", "ለዚህ መጽሐፍ የፒዲኤፍ ፋይል አልተገናኘም።": "Kitaabni kun faayilii PDF waliin hin wal qabatamne.", "ከስልክዎ ፒዲኤፍ መርጠው ማንበብ ይችላሉ።": "Bilbila keessanii PDF filatanii dubbisuu dandeessu.", "ፒዲኤፍ ክፈት": "PDF bani", "ግባ": "Seeni", "ተመዝገብ": "Galmaa'i", "ይለፍ ቃል ረሱ?": "Jecha darbii dagattanii?", "ሰፊ ቤተ መጻሕፍት": "Mana kitaabaa bal'aa", "ሀገርኛ እና የተተረጎሙ መጻሕፍት በአንድ ቦታ": "Kitaabota biyyaalessaa fi hiikaman iddoo tokkotti", "ያቆሙበትን ያስታውሳል": "Iddoo dhaabattan yaadata", "ገጾችን ምልክት ያድርጉ፣ በኋላ ይቀጥሉ": "Fuulota mallattoo'aa, booda itti fufaa", "የራስዎ መደርደሪያ": "Shelfii keessan", "የሚወዷቸውን መጻሕፍት ያስቀምጡ": "Kitaabota jaallattan olkaa'aa", "ለትምህርትዎ የሚሆኑ መጻሕፍት በክፍል ደረጃ": "Kitaabota barnootaaf ta'an sadarkaan", "መለያ ክፈት": "Akkaawuntii banaa", "“ንባብ ዓለምን የሚያሰፋ መስኮት ነው።”": "“Dubbisuun foddaa addunyaa bal'isudha.”", "ዛሬ ይጀምሩ — አንድ ገጽ እንኳ ቢሆን።": "Har'a jalqabaa — fuula tokko illee ta'u.", "ፕሮፋይል": "Piroofaayilii", "የተቀመጡ መጻሕፍት": "Kitaabota olkaa'aman", "የተመዘገቡ ገጾች": "Fuulota mallattoo'aman", "⚙️ ቅንብሮች": "⚙️ Qindaa'ina", "🔐 ግባ / ተመዝገብ": "🔐 Seeni / Galmaa'i", "🚪 ውጣ": "🚪 Ba'i", "ቅንብሮች": "Qindaa'ina", "👤 መገለጫ": "👤 Ibsa dhuunfaa", "ስም አስቀምጥ": "Maqaa olkaa'i", "🔍 የንባብ መጠን (Zoom)": "🔍 Hamma dubbisaa (Zoom)", "100% (መደበኛ)": "100% (Idilee)", "መጽሐፍ ሲያነቡ በታች በቀኝ ያሉትን − እና + በመጠቀም መጠኑን መቀየር ይችላሉ።": "Yeroo dubbistan − fi + gara mirgaa gadii jiran fayyadamuun hamma jijjiiruu dandeessu.", "🗂 መረጃ": "🗂 Odeeffannoo", "♥ የተቀመጡ መጻሕፍትን አጽዳ": "♥ Kitaabota olkaa'aman haqi", "🔖 የተመዘገቡ ገጾችን አጽዳ": "🔖 Fuulota mallattoo'aman haqi", "መጽሐፍ ወይም ደራሲ ይፈልጉ...": "Kitaaba yookaan barreessaa barbaadaa...", "የተማሪ መጽሐፍ ይፈልጉ...": "Kitaaba barattootaa barbaadaa...", "በአሳሽ ክፈት": "Birawzara keessatti bani", "አሳንስ": "Xiqqeessi", "አሳድግ": "Guddisi", "የገጽ ቁጥር": "Lakkoofsa fuulaa", "ማስታወሻ (አማራጭ)": "Yaadannoo (filannoo)", "ይለፍ ቃል": "Jecha darbii", "ሙሉ ስም": "Maqaa guutuu", "ይለፍ ቃል (ቢያንስ 6 ቁምፊ)": "Jecha darbii (yoo xiqqaate arfii 6)", "ይለፍ ቃል ደግመው ይጻፉ": "Jecha darbii deebi'ii barreessaa", "ስምዎ": "Maqaa keessan", "ታሪክ": "Seenaa", "ልብ ወለድ": "Oduu kalaqaa", "ግጥም": "Walaloo", "ሃይማኖት": "Amantaa", "ሳይንስ": "Saayinsii", "የልጆች": "Kan daa'immanii", "ሌላ": "Kan biraa", "ምንም መጽሐፍ አልተገኘም": "Kitaabni tokko illee hin argamne", "ገና ደራሲ የለም": "Ammaaf barreessaan hin jiru", "ገና የተማሪ መጽሐፍ አልተጨመረም": "Ammaaf kitaabni barattootaa hin dabalamne", "ሁሉም ክፍሎች": "Kutaalee hunda", "1–4ኛ ክፍል": "Kutaa 1–4", "5–8ኛ ክፍል": "Kutaa 5–8", "9–10ኛ ክፍል": "Kutaa 9–10", "11–12ኛ ክፍል": "Kutaa 11–12", "ዩኒቨርሲቲ": "Yunivarsiitii", "የተማሪ": "Barataa", "እንደምን አደሩ": "Akkam bultan", "እንደምን ዋሉ": "Akkam oolan", "እንደምን አመሸዎት": "Galgala gaarii", "የንባብ ወዳጅ": "Michuu dubbisaa", "“አንድ መጽሐፍ፣ አንድ አዲስ ዓለም።”": "“Kitaaba tokko, addunyaa haaraa tokko.”", "“ዛሬ የሚያነቡት ገጽ ነገ የሚኖሩትን ሕይወት ይቀርጻል።”": "“Fuulli har'a dubbistan jireenya boru jiraattan ni bocata.”", "“አንባቢ ሺህ ሕይወት ይኖራል፤ የማያነብ አንድ ብቻ።”": "“Dubbisaan jireenya kuma jiraata; kan hin dubbifne immoo tokko qofa.”", "“በቀን አሥር ደቂቃ ንባብ — በዓመት ብዙ መጻሕፍት።”": "“Guyyaatti daqiiqaa kudhan dubbisuun — waggaatti kitaabota hedduu.”", "“ሀገርኛ ታሪክን ያንብቡ፤ የተተረጎሙትን ይጎብኙ።”": "“Seenaa biyyaalessaa dubbisaa; kan hiikaman ilaalaa.”", "ይህ ኢሜይል ቀድሞ ተመዝግቧል": "Imeeliin kun duraan galmaa'eera", "ኢሜይሉ ትክክል አይደለም": "Imeeliin sirrii miti", "ይለፍ ቃል ቢያንስ 6 ቁምፊ መሆን አለበት": "Jechi darbii yoo xiqqaate arfii 6 ta'uu qaba", "ብዙ ሙከራ ተደርጓል — ቆይተው ይሞክሩ": "Yaaliin baay'ee taasifameera — booda yaalaa", "ኢንተርኔትዎን ያረጋግጡ": "Intarneetii keessan mirkaneessaa", "ኢሜይል ወይም ይለፍ ቃል ትክክል አይደለም": "Imeeliin yookaan jechi darbii sirrii miti", "አንባቢ": "Dubbisaa", "እንግዳ": "Keessummaa", "ገና አልገቡም": "Amma hin seenne", "ኢሜይል እና ይለፍ ቃል ያስገቡ": "Imeelii fi jecha darbii galchaa", "✅ እንኳን ደህና መጡ!": "✅ Baga nagaan dhuftan!", "መለያ አልተገኘም — መጀመሪያ ይመዝገቡ": "Akkaawuntiin hin argamne — dura galmaa'aa", "መጀመሪያ ኢሜይልዎን ይጻፉ": "Dura imeelii keessan barreessaa", "✅ የይለፍ ቃል መቀየሪያ ሊንክ ወደ ኢሜይልዎ ተልኳል": "✅ Liinkiin jecha darbii jijjiiru gara imeelii keessanii ergameera", "ሁሉንም መስኮች ይሙሉ": "Dirreewwan hunda guutaa", "ሁለቱ ይለፍ ቃሎች አይመሳሰሉም": "Jechoonni darbii lamaan wal hin fakkaatan", "ይህ ኢሜይል ቀድሞ ተመዝግቧል — 'ግባ' ን ይጠቀሙ": "Imeeliin kun duraan galmaa'eera — 'Seeni' fayyadamaa", "ከመለያዎ ይውጡ?": "Akkaawuntii keessanii irraa ba'uu barbaaddanii?", "✅ ስምዎ ተቀይሯል": "✅ Maqaan keessan jijjiirameera", "መቀየር አልተቻለም": "Jijjiiruun hin danda'amne", "ሁሉም የተቀመጡ መጻሕፍት ይጽዱ?": "Kitaabota olkaa'aman hunda haquu?", "ሁሉም የተመዘገቡ ገጾች ይጽዱ?": "Fuulota mallattoo'aman hunda haquu?", "✅ ተቀድቷል": "✅ Waraabameera", "መቅዳት አልተቻለም — ሊንኩን በረጅሙ ተጭነው ይቅዱ": "Waraabuun hin danda'amne — liinkii yeroo dheeraaf tuqaatii waraabaa", "✅ ሊንኩ ተቀድቷል — አሁን መለጠፍ ይችላሉ": "✅ Liinkiin waraabameera — amma maxxansuu dandeessu", "መቅዳት አልተቻለም — ከታች ያለውን ሊንክ በረጅሙ ተጭነው ይቅዱ": "Waraabuun hin danda'amne — liinkii gadii yeroo dheeraaf tuqaatii waraabaa", "🌐 ቋንቋ (Language)": "🌐 Afaan (Language)", "🎨 ገጽታ": "🎨 Bifa", "🌙 ጨለማ ገጽታ (Dark Mode)": "🌙 Haala dukkanaa", "የተመረጠው ቋንቋ ወዲያውኑ ይተገበራል።": "Afaanni filatame battalumatti hojiirra oola." }, "ti": { "የንባብ መድረክ": "መድረኽ ንባብ", "ንባብ ለሁሉም — ሀገርኛ እና የተተረጎሙ መጻሕፍት በእጅዎ": "ንባብ ንዅሉ — ሃገራውን ዝተርጎሙን መጻሕፍቲ ኣብ ኢድኩም", "ሁሉም ዓይነት": "ኩሎም ዓይነታት", "የተተረጎሙ": "ዝተርጎሙ", "የሀገር ውስጥ": "ናይ ሃገር ውሽጢ", "ሁሉም ምድቦች": "ኩሎም ምድባት", "⭐ ተመራጭ መጻሕፍት": "⭐ ተመራጽ መጻሕፍቲ", "🆕 አዳዲስ መጻሕፍት": "🆕 ሓደሽቲ መጻሕፍቲ", "ሁሉም መጻሕፍት": "ኩሎም መጻሕፍቲ", "← ወደ ደራሲዎች": "← ናብ ደረስቲ", "ገና ምንም አላስቀመጡም።": "ገና ዝዓቐብኩሞ የለን።", "በመጽሐፍ ካርድ ላይ ያለውን ♡ ይንኩ።": "ኣብ ካርድ መጽሓፍ ዘሎ ♡ ተንክዩ።", "♥ የተቀመጡ መጻሕፍት": "♥ ዝተዓቅቡ መጻሕፍቲ", "🔖 የተመዘገቡ ገጾች": "🔖 ምልክት ዝተገብረሎም ገጻት", "ለተማሪዎች": "ንተማሃሮ", "የተማሪ መጻሕፍት": "መጻሕፍቲ ተማሃሮ", "ለትምህርትዎ የሚሆኑ መጻሕፍት በክፍል ደረጃ ተለይተው ይገኛሉ": "ንትምህርትኩም ዝሰማምዑ መጻሕፍቲ ብደረጃ ክፍሊ ተፈላልዮም ይርከቡ", "ንባብ Hub": "ንባብ Hub", "የተተረጎሙ እና የሀገር ውስጥ መጻሕፍትን": "ዝተርጎሙን ናይ ሃገር ውሽጢን መጻሕፍቲ", "በአንድ ቦታ የምታነቡበት መድረክ።": "ኣብ ሓደ ቦታ ዝትንብቡሉ መድረኽ።", "አግኙን": "ርኸቡና", "ኢሜይል": "ኢሜይል", "ቅዳ": "ቅዳሕ", "ቴሌግራም": "ቴሌግራም", "ቲክቶክ": "ቲክቶክ", "ተደጋጋሚ ጥያቄዎች": "ተደጋጋሚ ሕቶታት", "መጻሕፍትን እንዴት አነባለሁ?": "መጻሕፍቲ ብኸመይ ክንብብ?", "በመጻሕፍት ገጽ ላይ የሚፈልጉትን መጽሐፍ ይንኩ፤ ፒዲኤፉ በቀጥታ ይከፈታል። በአፑ ውስጥ ካልታየ በራስጌው ያለውን \"↗\" ይጫኑ።": "ኣብ ገጽ መጻሕፍቲ ዝደለኹምዎ መጽሓፍ ተንክዩ፤ PDF ብቐጥታ ይኽፈት። ኣብ ውሽጢ ኣፕ እንተዘይተራእዩ ኣብ ርእሲ ዘሎ \"↗\" ጥዓዩ።", "መጽሐፍ እንዲጨመር ብጠይቅ?": "መጽሓፍ ክውሰኽ እንተሓተትኩ?", "ከላይ ባሉት አድራሻዎች (ኢሜይል ወይም ቴሌግራም) ያግኙን፤ ጥያቄዎን እንመለከታለን።": "ኣብ ላዕሊ ብዘለዉ ኣድራሻታት (ኢሜይል ወይ ቴሌግራም) ርኸቡና፤ ሕቶኹም ንርእዮ።", "አፑን ለወዳጅ አጋራ (ሊንክ ቅዳ)": "ኣፕ ንዓርኪ ኣካፍል (ሊንክ ቅዳሕ)", "Nibab Hub · ስሪት 1.1": "Nibab Hub · ዓይነት 1.1", "መጻሕፍት": "መጻሕፍቲ", "ደራሲዎች": "ደረስቲ", "የተቀመጡ": "ዝተዓቅቡ", "ተማሪ": "ተመሃራይ", "ስለ እኛ": "ብዛዕባና", "ገጽ አስታውስ": "ገጽ ዝክር", "አስቀምጥ": "ዓቅብ", "ተው": "ተው", "ለዚህ መጽሐፍ የፒዲኤፍ ፋይል አልተገናኘም።": "ንዚ መጽሓፍ ናይ PDF ፋይል ኣይተሓዘን።", "ከስልክዎ ፒዲኤፍ መርጠው ማንበብ ይችላሉ።": "ካብ ተሌፎንኩም PDF መሪጽኩም ክትንብቡ ትኽእሉ።", "ፒዲኤፍ ክፈት": "PDF ክፈት", "ግባ": "እቶ", "ተመዝገብ": "ተመዝገብ", "ይለፍ ቃል ረሱ?": "ሕላፍ ቃል ረሲዕኩም?", "ሰፊ ቤተ መጻሕፍት": "ሰፊሕ ቤተ መጻሕፍቲ", "ሀገርኛ እና የተተረጎሙ መጻሕፍት በአንድ ቦታ": "ሃገራውን ዝተርጎሙን መጻሕፍቲ ኣብ ሓደ ቦታ", "ያቆሙበትን ያስታውሳል": "ዘቋረጽኩምሉ የዘክር", "ገጾችን ምልክት ያድርጉ፣ በኋላ ይቀጥሉ": "ገጻት ምልክት ግበሩ፣ ደሓር ቀጽሉ", "የራስዎ መደርደሪያ": "ውልቃዊ መደርደሪኹም", "የሚወዷቸውን መጻሕፍት ያስቀምጡ": "ዝፈትዉዎም መጻሕፍቲ ዓቅቡ", "ለትምህርትዎ የሚሆኑ መጻሕፍት በክፍል ደረጃ": "መጻሕፍቲ ንትምህርትኩም ብደረጃ ክፍሊ", "መለያ ክፈት": "ኣካውንት ክፈት", "“ንባብ ዓለምን የሚያሰፋ መስኮት ነው።”": "“ንባብ ዓለም ዘስፍሕ መሳኹቲ እዩ።”", "ዛሬ ይጀምሩ — አንድ ገጽ እንኳ ቢሆን።": "ሎሚ ጀምሩ — ሓደ ገጽ እኳ እንተኾነ።", "ፕሮፋይል": "ፕሮፋይል", "የተቀመጡ መጻሕፍት": "ዝተዓቅቡ መጻሕፍቲ", "የተመዘገቡ ገጾች": "ምልክት ዝተገብረሎም ገጻት", "⚙️ ቅንብሮች": "⚙️ ቅጥዕታት", "🔐 ግባ / ተመዝገብ": "🔐 እቶ / ተመዝገብ", "🚪 ውጣ": "🚪 ውጻእ", "ቅንብሮች": "ቅጥዕታት", "👤 መገለጫ": "👤 መግለጺ", "ስም አስቀምጥ": "ስም ዓቅብ", "🔍 የንባብ መጠን (Zoom)": "🔍 ዓቐን ንባብ (Zoom)", "100% (መደበኛ)": "100% (መደበኛ)", "መጽሐፍ ሲያነቡ በታች በቀኝ ያሉትን − እና + በመጠቀም መጠኑን መቀየር ይችላሉ።": "ክትንብቡ ከለኹም ኣብ የማን ታሕቲ ዘለዉ − ን + ተጠቒምኩም ዓቐን ክትቅይሩ ትኽእሉ።", "🗂 መረጃ": "🗂 ሓበሬታ", "♥ የተቀመጡ መጻሕፍትን አጽዳ": "♥ ዝተዓቅቡ መጻሕፍቲ ደምስስ", "🔖 የተመዘገቡ ገጾችን አጽዳ": "🔖 ምልክት ዝተገብረሎም ገጻት ደምስስ", "መጽሐፍ ወይም ደራሲ ይፈልጉ...": "መጽሓፍ ወይ ደራሲ ድለዩ...", "የተማሪ መጽሐፍ ይፈልጉ...": "መጽሓፍ ተመሃራይ ድለዩ...", "በአሳሽ ክፈት": "ኣብ ብራውዘር ክፈት", "አሳንስ": "ንኽሊ", "አሳድግ": "ኣዕብይ", "የገጽ ቁጥር": "ቁጽሪ ገጽ", "ማስታወሻ (አማራጭ)": "መዘኻኸሪ (ኣማራጺ)", "ይለፍ ቃል": "ሕላፍ ቃል", "ሙሉ ስም": "ምሉእ ስም", "ይለፍ ቃል (ቢያንስ 6 ቁምፊ)": "ሕላፍ ቃል (ብውሑዱ 6 ፊደላት)", "ይለፍ ቃል ደግመው ይጻፉ": "ሕላፍ ቃል ደጊምኩም ጽሓፉ", "ስምዎ": "ስምኩም", "ታሪክ": "ታሪኽ", "ልብ ወለድ": "ልቦለድ", "ግጥም": "ግጥሚ", "ሃይማኖት": "ሃይማኖት", "ሳይንስ": "ሳይንስ", "የልጆች": "ናይ ህጻናት", "ሌላ": "ካልእ", "ምንም መጽሐፍ አልተገኘም": "ዋላ ሓደ መጽሓፍ ኣይተረኽበን", "ገና ደራሲ የለም": "ገና ደራሲ የለን", "ገና የተማሪ መጽሐፍ አልተጨመረም": "ገና መጽሓፍ ተመሃራይ ኣይተወስኸን", "ሁሉም ክፍሎች": "ኩሎም ክፍልታት", "1–4ኛ ክፍል": "1–4ይ ክፍሊ", "5–8ኛ ክፍል": "5–8ይ ክፍሊ", "9–10ኛ ክፍል": "9–10ይ ክፍሊ", "11–12ኛ ክፍል": "11–12ይ ክፍሊ", "ዩኒቨርሲቲ": "ዩኒቨርስቲ", "የተማሪ": "ተመሃራይ", "እንደምን አደሩ": "ከመይ ሓደርኩም", "እንደምን ዋሉ": "ከመይ ወዓልኩም", "እንደምን አመሸዎት": "ከመይ ኣምሲኹም", "የንባብ ወዳጅ": "ዓርኪ ንባብ", "“አንድ መጽሐፍ፣ አንድ አዲስ ዓለም።”": "“ሓደ መጽሓፍ፣ ሓደ ሓድሽ ዓለም።”", "“ዛሬ የሚያነቡት ገጽ ነገ የሚኖሩትን ሕይወት ይቀርጻል።”": "“ሎሚ ዘንብብዎ ገጽ ጽባሕ ዝነብርዎ ህይወት የቐርጾ።”", "“አንባቢ ሺህ ሕይወት ይኖራል፤ የማያነብ አንድ ብቻ።”": "“ኣንባቢ ሽሕ ህይወት ይነብር፤ ዘየንብብ ሓደ ጥራይ።”", "“በቀን አሥር ደቂቃ ንባብ — በዓመት ብዙ መጻሕፍት።”": "“ንመዓልቲ ዓሰርተ ደቒቕ ንባብ — ብዓመት ብዙሓት መጻሕፍቲ።”", "“ሀገርኛ ታሪክን ያንብቡ፤ የተተረጎሙትን ይጎብኙ።”": "“ሃገራዊ ታሪኽ ኣንብቡ፤ ዝተርጎሙ ጎብንዩ።”", "ይህ ኢሜይል ቀድሞ ተመዝግቧል": "እዚ ኢሜይል ኣቀዲሙ ተመዝጊቡ", "ኢሜይሉ ትክክል አይደለም": "እቲ ኢሜይል ቅኑዕ ኣይኮነን", "ይለፍ ቃል ቢያንስ 6 ቁምፊ መሆን አለበት": "ሕላፍ ቃል ብውሑዱ 6 ፊደላት ክኸውን ኣለዎ", "ብዙ ሙከራ ተደርጓል — ቆይተው ይሞክሩ": "ብዙሕ ፈተነ ተገይሩ — ድሕሪ ቁሩብ ፈትኑ", "ኢንተርኔትዎን ያረጋግጡ": "ኢንተርኔትኩም ኣረጋግጹ", "ኢሜይል ወይም ይለፍ ቃል ትክክል አይደለም": "ኢሜይል ወይ ሕላፍ ቃል ቅኑዕ ኣይኮነን", "አንባቢ": "ኣንባቢ", "እንግዳ": "እንግዳ", "ገና አልገቡም": "ገና ኣይኣተኹምን", "ኢሜይል እና ይለፍ ቃል ያስገቡ": "ኢሜይልን ሕላፍ ቃልን የእትዉ", "✅ እንኳን ደህና መጡ!": "✅ እንቋዕ ብደሓን መጻእኩም!", "መለያ አልተገኘም — መጀመሪያ ይመዝገቡ": "ኣካውንት ኣይተረኽበን — መጀመርታ ተመዝገቡ", "መጀመሪያ ኢሜይልዎን ይጻፉ": "መጀመርታ ኢሜይልኩም ጽሓፉ", "✅ የይለፍ ቃል መቀየሪያ ሊንክ ወደ ኢሜይልዎ ተልኳል": "✅ ሊንክ ምቕያር ሕላፍ ቃል ናብ ኢሜይልኩም ተሰዲዱ", "ሁሉንም መስኮች ይሙሉ": "ኩሉ መሳለጥታት ምልኡ", "ሁለቱ ይለፍ ቃሎች አይመሳሰሉም": "እቶም ክልተ ሕላፍ ቃላት ኣይመሳሰሉን", "ይህ ኢሜይል ቀድሞ ተመዝግቧል — 'ግባ' ን ይጠቀሙ": "እዚ ኢሜይል ኣቀዲሙ ተመዝጊቡ — 'እቶ' ተጠቐሙ", "ከመለያዎ ይውጡ?": "ካብ ኣካውንትኩም ክትወጹ ትደልዩ?", "✅ ስምዎ ተቀይሯል": "✅ ስምኩም ተቐይሩ", "መቀየር አልተቻለም": "ክቕየር ኣይተኻእለን", "ሁሉም የተቀመጡ መጻሕፍት ይጽዱ?": "ኩሎም ዝተዓቅቡ መጻሕፍቲ ይደምሰሱ?", "ሁሉም የተመዘገቡ ገጾች ይጽዱ?": "ኩሎም ምልክት ዝተገብረሎም ገጻት ይደምሰሱ?", "✅ ተቀድቷል": "✅ ተቐዲሑ", "መቅዳት አልተቻለም — ሊንኩን በረጅሙ ተጭነው ይቅዱ": "ክቕዳሕ ኣይተኻእለን — ነቲ ሊንክ ንነዊሕ ጥዓዩ ቀዱሑ", "✅ ሊንኩ ተቀድቷል — አሁን መለጠፍ ይችላሉ": "✅ እቲ ሊንክ ተቐዲሑ — ሕጂ ክትለጥፉ ትኽእሉ", "መቅዳት አልተቻለም — ከታች ያለውን ሊንክ በረጅሙ ተጭነው ይቅዱ": "ክቕዳሕ ኣይተኻእለን — ነቲ ኣብ ታሕቲ ዘሎ ሊንክ ንነዊሕ ጥዓዩ ቀዱሑ", "🌐 ቋንቋ (Language)": "🌐 ቋንቋ (Language)", "🎨 ገጽታ": "🎨 ገጽታ", "🌙 ጨለማ ገጽታ (Dark Mode)": "🌙 ጸሊም ገጽታ", "የተመረጠው ቋንቋ ወዲያውኑ ይተገበራል።": "እቲ ዝተመርጸ ቋንቋ ብቕጽበት ይትግበር።" } };
+    var RULES = {
+        en: [[/^(🔖 )?ገጽ (\d+)(?: — ([\s\S]*))?$/, function (x) { return (x[1] || "") + "Page " + x[2] + (x[3] ? " — " + x[3] : ""); }], [/^✅ ገጽ (\d+) ተመዝግቧል[\s\S]*$/, function (x) { return "✅ Page " + x[1] + " saved — find it in the 'Saved' tab"; }], [/^([\s\S]*?)(\d+) መጻሕፍት$/, function (x) { return x[1] + x[2] + " books"; }], [/^🎉 እንኳን ደህና መጡ፣ ([\s\S]*)$/, function (x) { return "🎉 Welcome, " + x[1]; }]],
+        om: [[/^(🔖 )?ገጽ (\d+)(?: — ([\s\S]*))?$/, function (x) { return (x[1] || "") + "Fuula " + x[2] + (x[3] ? " — " + x[3] : ""); }], [/^✅ ገጽ (\d+) ተመዝግቧል[\s\S]*$/, function (x) { return "✅ Fuulli " + x[1] + " galmaa'eera — kutaa 'Kan olkaa'aman' keessatti argattu"; }], [/^([\s\S]*?)(\d+) መጻሕፍት$/, function (x) { return x[1] + "kitaabota " + x[2]; }], [/^🎉 እንኳን ደህና መጡ፣ ([\s\S]*)$/, function (x) { return "🎉 Baga nagaan dhuftan, " + x[1]; }]],
+        ti: [[/^(🔖 )?ገጽ (\d+)(?: — ([\s\S]*))?$/, function (x) { return (x[1] || "") + "ገጽ " + x[2] + (x[3] ? " — " + x[3] : ""); }], [/^✅ ገጽ (\d+) ተመዝግቧል[\s\S]*$/, function (x) { return "✅ ገጽ " + x[1] + " ተመዝጊቡ — ኣብ ትሕዝቶ 'ዝተዓቅቡ' ርኸብዎ"; }], [/^([\s\S]*?)(\d+) መጻሕፍት$/, function (x) { return x[1] + x[2] + " መጻሕፍቲ"; }], [/^🎉 እንኳን ደህና መጡ፣ ([\s\S]*)$/, function (x) { return "🎉 እንቋዕ ብደሓን መጻእኩም፣ " + x[1]; }]]
+    };
+    var LANG = "am";
+    try {
+        LANG = localStorage.getItem("nh_lang") || "am";
+    }
+    catch (e) { }
+    if (!I18N[LANG])
+        LANG = "am";
+    function trText(o) {
+        var m = o.match(/^(\s*)([\s\S]*?)(\s*)$/), k = m[2];
+        if (!k)
+            return o;
+        var t = I18N[LANG][k];
+        if (t === undefined) {
+            var r = RULES[LANG] || [];
+            for (var i = 0; i < r.length; i++) {
+                var x = k.match(r[i][0]);
+                if (x) {
+                    t = r[i][1](x);
+                    break;
+                }
+            }
+        }
+        return t === undefined ? o : m[1] + t + m[3];
+    }
+    var tr = function (s) { return LANG === "am" ? s : trText(String(s)); };
+    var _al = window.alert.bind(window), _cf = window.confirm.bind(window);
+    window.alert = function (m) { return _al(tr(String(m))); };
+    window.confirm = function (m) { return _cf(tr(String(m))); };
+    var applying = false;
+    function applyLang() {
+        applying = true;
+        try {
+            var w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+            var n = void 0;
+            while (n = w.nextNode()) {
+                var p = n.parentNode;
+                if (!p || (p.closest && p.closest("#admin,script,style,#jserr")))
+                    continue;
+                var cur = n.nodeValue;
+                if (n.__t === undefined || n.__t !== cur)
+                    n.__o = cur;
+                var t = LANG === "am" ? n.__o : trText(n.__o);
+                if (t !== cur)
+                    n.nodeValue = t;
+                n.__t = t;
+            }
+            document.querySelectorAll("[placeholder],[title],[aria-label]").forEach(function (el) {
+                if (el.closest("#admin"))
+                    return;
+                ["placeholder", "title", "aria-label"].forEach(function (a) {
+                    if (!el.hasAttribute(a))
+                        return;
+                    var cur = el.getAttribute(a), k = "__o" + a, kt = "__t" + a;
+                    if (el[kt] === undefined || el[kt] !== cur)
+                        el[k] = cur;
+                    var t = LANG === "am" ? el[k] : trText(el[k]);
+                    if (t !== cur)
+                        el.setAttribute(a, t);
+                    el[kt] = t;
+                });
+            });
+            document.documentElement.lang = LANG;
+        }
+        finally {
+            applying = false;
+        }
+        langObs.takeRecords();
+    }
+    var langObs = new MutationObserver(function () { if (applying)
+        return; clearTimeout(langObs.t); langObs.t = setTimeout(applyLang, 40); });
+    langObs.observe(document.body, { childList: true, subtree: true, characterData: true });
+    function setLang(l) {
+        if (!I18N[l] && l !== "am")
+            l = "am";
+        LANG = l;
+        try {
+            localStorage.setItem("nh_lang", l);
+        }
+        catch (e) { }
+        ["#slang", "#alang"].forEach(function (i) { var e = document.querySelector(i); if (e)
+            e.value = l; });
+        applyLang();
+    }
+    function imgUrl(u) { var m = u.match(/drive\.google\.com\/file\/d\/([^/?]+)/) || u.match(/drive\.google\.com\/open\?id=([^&]+)/); return m ? "https://drive.google.com/thumbnail?id=" + m[1] + "&sz=w600" : u; }
+    function fix(u) { var m = u.match(/drive\.google\.com\/file\/d\/([^/?]+)/); return m ? "https://drive.google.com/file/d/" + m[1] + "/preview" : u; }
+    $$("nav button").forEach(function (b) { return b.onclick = function () {
+        $$("nav button").forEach(function (x) { return x.classList.toggle("on", x === b); });
+        $$(".sec").forEach(function (s) { return s.classList.toggle("on", s.id === b.dataset.s); });
+    }; });
+    function card(b0) {
+        var b = __assign(__assign({}, b0), { title: E(b0.title), author: E(b0.author), c: b0.c || ["#2f7a66", "#1f5545"], cover: /^data:image\//.test(b0.cover || "") ? b0.cover : /^https?:\/\//i.test(b0.coverUrl || "") ? E(imgUrl(b0.coverUrl)) : "" });
+        return "<div class=\"book\" data-id=\"".concat(b.id, "\"><button class=\"sv").concat(isSaved(b.id) ? " on" : "", "\" aria-label=\"\u12A0\u1235\u1240\u121D\u1325\">").concat(isSaved(b.id) ? "♥" : "♡", "</button><div class=\"cw\">").concat(b.cover ? "<img class=\"cover\" src=\"".concat(b.cover, "\" alt=\"").concat(b.title, "\" loading=\"lazy\" onerror=\"this.onerror=null;this.src='").concat(PH, "'\">") : "<div class=\"cover\" style=\"background:linear-gradient(145deg,".concat(b.c[0], ",").concat(b.c[1], ")\"><span>Nibab Hub</span>").concat(b.title, "<span>").concat(b.author, "</span></div>"), "</div><h3>").concat(b.title, "</h3><p>").concat(b.author, "</p><span class=\"tag\">").concat(b0.student ? E(gradeLbl(b0.grade)) : b.type === "tr" ? "የተተረጎመ" : "የሀገር ውስጥ", "</span></div>");
+    }
+    function render() {
+        var LB = BOOKS.filter(function (b) { return !b.student; });
+        var q = $("#q").value.trim().toLowerCase();
+        var list = LB.filter(function (b) { return (filter === "all" || b.type === filter) && (cat === "all" || (b.cat || "ሌላ") === cat) && (b.title + b.author).toLowerCase().includes(q); });
+        var feat = LB.filter(function (b) { return b.featured; }).slice(0, 10);
+        $("#home").hidden = !(!q && filter === "all" && cat === "all" && LB.length);
+        $("#featH").hidden = $("#feat").hidden = !feat.length;
+        $("#feat").innerHTML = feat.map(function (b) { return card(b); }).join("");
+        $("#newb").innerHTML = LB.slice(0, 8).map(function (b) { return card(b); }).join("");
+        $("#grid").innerHTML = list.length ? list.map(function (b) { return card(b); }).join("") : "<div class=\"empty\" style=\"grid-column:1/-1\">\u121D\u1295\u121D \u1218\u133D\u1210\u134D \u12A0\u120D\u1270\u1308\u1298\u121D</div>";
+    }
+    $("#q").oninput = render;
+    $$("#chips .chip").forEach(function (c) { return c.onclick = function () {
+        filter = c.dataset.f;
+        $$("#chips .chip").forEach(function (x) { return x.classList.toggle("on", x === c); });
+        render();
+    }; });
+    $("#cats").innerHTML = __spreadArray(['<div class="chip on" data-c="all">' + ico("all") + 'ሁሉም ምድቦች</div>'], __read(CATS.map(function (c) { return "<div class=\"chip\" data-c=\"".concat(c, "\">").concat(ico(c)).concat(c, "</div>"); })), false).join("");
+    $$("#chips .chip").forEach(function (c, i) { return c.insertAdjacentHTML("afterbegin", ico(["all", "tr", "lo"][i])); });
+    $$("#cats .chip").forEach(function (c) { return c.onclick = function () {
+        cat = c.dataset.c;
+        $$("#cats .chip").forEach(function (x) { return x.classList.toggle("on", x === c); });
+        render();
+    }; });
+    $("#acat").innerHTML = CATS.map(function (c) { return "<option value=\"".concat(c, "\">").concat(c, "</option>"); }).join("");
+    function openBook(id, mark) {
+        var b = BOOKS.find(function (x) { return x.id == id; });
+        if (!b)
+            return;
+        curBook = b;
+        $("#rt").textContent = b.title;
+        show(b.pdf || "", mark && mark.page);
+        var n = $("#rnote");
+        n.hidden = !mark;
+        if (mark)
+            n.textContent = "🔖 ገጽ " + mark.page + (mark.note ? " — " + mark.note : "");
+        $("#bsheet").hidden = true;
+        $("#reader").classList.add("on");
+        applyZoom();
+        if (TG)
+            TG.BackButton.show();
+    }
+    var curUrl = "";
+    function show(url, page) {
+        curUrl = url || "";
+        $("#frame").hidden = !url;
+        $("#pick").style.display = url ? "none" : "flex";
+        $("#zb").hidden = !url;
+        var u = url ? fix(url) : "about:blank";
+        $("#frame").src = (page && url && !/drive\.google\.com/.test(u)) ? u + "#page=" + page : u;
+    }
+    $("#file").onchange = function (e) { var f = e.target.files[0]; if (f)
+        show(URL.createObjectURL(f)); };
+    function closeReader() { $("#bsheet").hidden = true; $("#reader").classList.remove("on"); $("#frame").src = "about:blank"; if (TG)
+        TG.BackButton.hide(); }
+    $("#back").onclick = closeReader;
+    $("#ext").onclick = function () {
+        if (!curUrl || /^blob:/.test(curUrl))
+            return;
+        var u = fix(curUrl).replace("/preview", "/view");
+        if (TG && TG.openLink)
+            TG.openLink(u);
+        else
+            window.open(u, "_blank");
+    };
+    var Z = 1;
+    try {
+        Z = parseFloat(localStorage.getItem("nh_zoom")) || 1;
+    }
+    catch (e) { }
+    function applyZoom() {
+        Z = Math.min(3, Math.max(.5, Math.round(Z * 100) / 100));
+        var f = $("#frame");
+        f.style.transform = "scale(" + Z + ")";
+        f.style.width = 100 / Z + "%";
+        f.style.height = 100 / Z + "%";
+        $("#zv").textContent = Math.round(Z * 100) + "%";
+        var s = $("#szoom");
+        if (s) {
+            var best = __spreadArray([], __read(s.options), false).reduce(function (a, o) { return Math.abs(o.value - Z) < Math.abs(a.value - Z) ? o : a; });
+            s.value = best.value;
+        }
+    }
+    function setZoom(z) { Z = z; try {
+        localStorage.setItem("nh_zoom", Z);
+    }
+    catch (e) { } applyZoom(); }
+    $("#zin").onclick = function () { return setZoom(Z + .25); };
+    $("#zout").onclick = function () { return setZoom(Z - .25); };
+    $("#zv").onclick = function () { return setZoom(1); };
+    $("#szoom").onchange = function (e) { return setZoom(parseFloat(e.target.value)); };
+    applyZoom();
+    var me = "";
+    try {
+        me = localStorage.getItem("nh_name") || "";
+    }
+    catch (e) { }
+    $("#name").value = me;
+    var db = null, auth = null, store = null, F = null, fbStatus = "", dbState = "በመገናኘት ላይ...";
+    var CDN = "https://www.gstatic.com/firebasejs/10.12.2/";
+    function initFirebase() {
+        return __awaiter(this, void 0, void 0, function () {
+            var m, app, e_1;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        if (/YOUR_/.test(FIREBASE_CONFIG.apiKey + FIREBASE_CONFIG.projectId)) {
+                            fbStatus = "config";
+                            dbState = "❌ FIREBASE_CONFIG አልተሞላም";
+                            console.warn("FIREBASE_CONFIG አልተሞላም");
+                            return [2 /*return*/];
+                        }
+                        _a.label = 1;
+                    case 1:
+                        _a.trys.push([1, 3, , 4]);
+                        return [4 /*yield*/, Promise.all(["app", "firestore", "auth", "storage"].map(function (n) { return imp(CDN + "firebase-" + n + ".js"); }))];
+                    case 2:
+                        m = _a.sent();
+                        F = Object.assign.apply(Object, __spreadArray([{}], __read(m), false));
+                        app = F.initializeApp(FIREBASE_CONFIG);
+                        db = F.getFirestore(app);
+                        try {
+                            auth = window.__LSOK ? F.getAuth(app) : F.initializeAuth(app, { persistence: F.inMemoryPersistence });
+                        }
+                        catch (e) {
+                            auth = F.initializeAuth(app, { persistence: F.inMemoryPersistence });
+                        }
+                        store = F.getStorage(app);
+                        F.onSnapshot(F.query(F.collection(db, "books"), F.orderBy("createdAt", "desc")), function (s) { dbState = "✅ ተገናኝቷል — " + s.size + " መጻሕፍት በ Firestore ውስጥ"; BOOKS = s.docs.map(function (d) { return (__assign({ id: d.id }, d.data())); }); render(); renderStu(); renderSaved(); renderAuthors(); adminView(); }, function (e) { console.warn("books:", e.code, e.message); dbState = "❌ " + (e.code || "") + " — " + (e.message || ""); adminView(); $("#grid").innerHTML = '<div class="empty" style="grid-column:1/-1">መጻሕፍትን መጫን አልተቻለም (' + E(e.code || "error") + ')</div>'; });
+                        F.onAuthStateChanged(auth, function (u) { adminView(); onAuth(u); });
+                        return [3 /*break*/, 4];
+                    case 3:
+                        e_1 = _a.sent();
+                        dbState = "❌ " + e_1.message;
+                        fbStatus = "error: " + e_1.message;
+                        db = auth = store = F = null;
+                        console.warn("Firebase አልተገናኘም:", e_1.message);
+                        return [3 /*break*/, 4];
+                    case 4: return [2 /*return*/];
+                }
+            });
+        });
+    }
+    var taps = 0, tapT, unlocked = false, needLogin = false;
+    $("#logo").onclick = function () {
+        taps++;
+        clearTimeout(tapT);
+        tapT = setTimeout(function () { return taps = 0; }, 1500);
+        if (taps >= 5) {
+            taps = 0;
+            unlocked = false;
+            $("#admin").classList.add("on");
+            adminView();
+            setTimeout(function () { return $("#agpw").focus(); }, 80);
+        }
+    };
+    function adminView() {
+        $("#agate").hidden = unlocked;
+        $("#apanel").hidden = !unlocked;
+        $("#astat").textContent = "Firebase: " + dbState;
+        $("#alogin").hidden = !unlocked || !needLogin;
+        renderAdminList();
+    }
+    function renderAdminList() {
+        $("#alist").innerHTML = BOOKS.map(function (b) { return "<div class=\"ai\"><span>".concat(E(b.title), "</span><button data-d=\"").concat(b.id, "\">\u1230\u122D\u12DD</button></div>"); }).join("") || '<p class="empty">ባዶ ነው</p>';
+    }
+    var needAuth = function (e) { return e && /permission-denied|unauthorized|unauthenticated/.test(e.code || ""); };
+    function authPrompt() { needLogin = true; adminView(); alert("ፈቃድ የለም — ከላይ በ Firebase አስተዳዳሪ መለያዎ ይግቡ"); }
+    $("#aclose").onclick = function () { unlocked = false; $("#agpw").value = ""; $("#admin").classList.remove("on"); };
+    $("#alogbtn").onclick = function () {
+        if (!auth) {
+            alert("Firebase አልተገናኘም — ኢንተርኔትዎን ያረጋግጡ");
+            return;
+        }
+        F.signInWithEmailAndPassword(auth, $("#aem").value.trim(), $("#apw").value)
+            .then(function () { needLogin = false; adminView(); }).catch(function () { return alert("ኢሜይል ወይም ይለፍ ቃል ትክክል አይደለም"); });
+    };
+    $("#aout").onclick = function () { unlocked = false; needLogin = false; $("#admin").classList.remove("on"); };
+    var gateFails = 0, gateLock = 0;
+    function tryGate() {
+        var er = $("#agerr");
+        if (Date.now() < gateLock) {
+            er.textContent = "ብዙ ሙከራ ተደርጓል — ከ30 ሰከንድ በኋላ ይሞክሩ";
+            er.hidden = false;
+            return;
+        }
+        var pw = $("#agpw").value;
+        $("#agpw").value = "";
+        setTimeout(function () {
+            if (admHash(pw) === ADM_HASH) {
+                gateFails = 0;
+                unlocked = true;
+                er.hidden = true;
+                adminView();
+            }
+            else {
+                gateFails++;
+                if (gateFails >= 5) {
+                    gateLock = Date.now() + 30000;
+                    gateFails = 0;
+                }
+                er.textContent = "የይለፍ ቃሉ ትክክል አይደለም";
+                er.hidden = false;
+            }
+        }, 20);
+    }
+    $("#agbtn").onclick = tryGate;
+    $("#agpw").onkeydown = function (e) { if (e.key === "Enter")
+        tryGate(); };
+    $("#acover").onchange = function (e) {
+        var f = e.target.files[0];
+        if (!f)
+            return;
+        var im = $("#aprev");
+        im.src = URL.createObjectURL(f);
+        im.style.display = "block";
+        $("#aprevt").style.display = "none";
+    };
+    function toCover(file) {
+        return new Promise(function (ok, no) {
+            var img = new Image(), u = URL.createObjectURL(file);
+            img.onload = function () {
+                var W = 360, H = 480, c = document.createElement("canvas");
+                c.width = W;
+                c.height = H;
+                var x = c.getContext("2d"), r = Math.max(W / img.width, H / img.height), w = img.width * r, h = img.height * r;
+                x.fillStyle = "#fff";
+                x.fillRect(0, 0, W, H);
+                x.drawImage(img, (W - w) / 2, (H - h) / 2, w, h);
+                URL.revokeObjectURL(u);
+                ok(c.toDataURL("image/jpeg", .82));
+            };
+            img.onerror = function () { return no(new Error("img")); };
+            img.src = u;
+        });
+    }
+    var busy = false;
+    var isUrl = function (u) { return /^https?:\/\//i.test(u); };
+    $("#aadd").onclick = function () { return __awaiter(_this, void 0, void 0, function () {
+        var title, author, cf, cu, pf, pu, prog, nb, _a, path, r, task, _b, e_2;
+        return __generator(this, function (_c) {
+            switch (_c.label) {
+                case 0:
+                    if (busy)
+                        return [2 /*return*/];
+                    if (!db) {
+                        alert("Firebase አልተገናኘም — ኢንተርኔትዎን ያረጋግጡ");
+                        return [2 /*return*/];
+                    }
+                    title = $("#atitle").value.trim(), author = $("#aauthor").value.trim();
+                    cf = $("#acover").files[0], cu = $("#acoverurl").value.trim();
+                    pf = $("#apdf").files[0], pu = $("#apdfurl").value.trim(), prog = $("#aprog");
+                    if (!title || !author) {
+                        alert("ርዕስ እና የደራሲ ስም ያስገቡ");
+                        return [2 /*return*/];
+                    }
+                    if (!pf && !pu) {
+                        alert("የፒዲኤፍ ሊንክ ያስገቡ ወይም ፋይል ይምረጡ");
+                        return [2 /*return*/];
+                    }
+                    if (pu && !isUrl(pu)) {
+                        alert("የፒዲኤፍ ሊንክ በ https:// መጀመር አለበት");
+                        return [2 /*return*/];
+                    }
+                    if (cu && !isUrl(cu)) {
+                        alert("የሽፋን ሊንክ በ https:// መጀመር አለበት");
+                        return [2 /*return*/];
+                    }
+                    if (pf && pf.size > 50 * 1024 * 1024) {
+                        alert("ፋይሉ ከ50MB መብለጥ የለበትም");
+                        return [2 /*return*/];
+                    }
+                    busy = true;
+                    $("#aadd").disabled = true;
+                    _c.label = 1;
+                case 1:
+                    _c.trys.push([1, 10, , 11]);
+                    nb = { title: title, author: author, type: $("#atype").value, cat: $("#acat").value, featured: $("#afeat").checked, student: $("#astu").checked, grade: $("#agrade").value, createdAt: Date.now(), c: [["#3f8a74", "#1f5545"], ["#2f6f7a", "#1b4550"], ["#5b8f5a", "#2f5233"], ["#4d9a88", "#1f5f52"]][Math.floor(Math.random() * 4)] };
+                    if (!cf) return [3 /*break*/, 3];
+                    prog.textContent = "ሽፋን በማዘጋጀት ላይ...";
+                    _a = nb;
+                    return [4 /*yield*/, toCover(cf)];
+                case 2:
+                    _a.cover = _c.sent();
+                    return [3 /*break*/, 4];
+                case 3:
+                    if (cu)
+                        nb.coverUrl = cu;
+                    _c.label = 4;
+                case 4:
+                    if (!pf) return [3 /*break*/, 7];
+                    path = "books/" + Date.now() + "_" + pf.name.replace(/[^\w.\-]/g, "_"), r = F.ref(store, path), task = F.uploadBytesResumable(r, pf);
+                    task.on("state_changed", function (x) { prog.textContent = "በመጫን ላይ... " + Math.round(x.bytesTransferred / x.totalBytes * 100) + "%"; });
+                    return [4 /*yield*/, task];
+                case 5:
+                    _c.sent();
+                    _b = nb;
+                    return [4 /*yield*/, F.getDownloadURL(r)];
+                case 6:
+                    _b.pdf = _c.sent();
+                    nb.pdfPath = path;
+                    return [3 /*break*/, 8];
+                case 7:
+                    nb.pdf = pu;
+                    _c.label = 8;
+                case 8: return [4 /*yield*/, F.addDoc(F.collection(db, "books"), nb)];
+                case 9:
+                    _c.sent();
+                    ["#atitle", "#aauthor", "#acoverurl", "#apdfurl"].forEach(function (i) { return $(i).value = ""; });
+                    $("#apdf").value = "";
+                    $("#acover").value = "";
+                    $("#aprev").style.display = "none";
+                    $("#aprevt").style.display = "";
+                    $("#afeat").checked = false;
+                    $("#astu").checked = false;
+                    alert("✅ ተጨምሯል");
+                    return [3 /*break*/, 11];
+                case 10:
+                    e_2 = _c.sent();
+                    if (needAuth(e_2))
+                        authPrompt();
+                    else
+                        alert("መጨመር አልተቻለም\n" + (e_2.code || "") + "\n" + (e_2.message || ""));
+                    return [3 /*break*/, 11];
+                case 11:
+                    busy = false;
+                    $("#aadd").disabled = false;
+                    prog.textContent = "";
+                    return [2 /*return*/];
+            }
+        });
+    }); };
+    $("#alist").onclick = function (e) {
+        var id = e.target.dataset.d;
+        if (!id || !db || !confirm("ይህ መጽሐፍ ይሰረዝ?"))
+            return;
+        var bk = BOOKS.find(function (b) { return b.id == id; });
+        F.deleteDoc(F.doc(db, "books", id))
+            .then(function () { if (bk && bk.pdfPath)
+            F.deleteObject(F.ref(store, bk.pdfPath)).catch(function () { }); })
+            .catch(function (e) { if (needAuth(e))
+            authPrompt();
+        else
+            alert("መሰረዝ አልተቻለም"); });
+    };
+    if (TG) {
+        var u = TG.initDataUnsafe && TG.initDataUnsafe.user;
+        if (u && u.first_name && !$("#name").value)
+            $("#name").value = u.first_name.slice(0, 20);
+        TG.BackButton.onClick(closeReader);
+    }
+    var isSaved = function (id) { return SAVED.includes(String(id)); };
+    var persist = function () { try {
+        localStorage.setItem("nh_saved", JSON.stringify(SAVED));
+        localStorage.setItem("nh_marks", JSON.stringify(MARKS));
+    }
+    catch (e) { } };
+    function refreshAll() { render(); renderStu(); renderSaved(); renderAuthors(); }
+    function toggleSave(id) { id = String(id); SAVED = isSaved(id) ? SAVED.filter(function (x) { return x !== id; }) : __spreadArray([id], __read(SAVED), false); persist(); refreshAll(); }
+    document.addEventListener("click", function (e) {
+        var bk = e.target.closest(".book");
+        if (!bk)
+            return;
+        if (e.target.closest(".sv"))
+            toggleSave(bk.dataset.id);
+        else
+            openBook(bk.dataset.id);
+    });
+    function renderSaved() {
+        var list = SAVED.map(function (id) { return BOOKS.find(function (b) { return String(b.id) === id; }); }).filter(Boolean);
+        var mk = MARKS.map(function (m) { return (__assign(__assign({}, m), { b: BOOKS.find(function (b) { return String(b.id) === m.id; }) })); }).filter(function (m) { return m.b; });
+        $("#savH").hidden = !list.length;
+        $("#savGrid").innerHTML = list.map(function (b) { return card(b); }).join("");
+        $("#markH").hidden = !mk.length;
+        $("#markList").innerHTML = mk.map(function (m) { return "<div class=\"mk\" data-t=\"".concat(m.t, "\"><div class=\"av\">\uD83D\uDD16</div><div class=\"tx\"><b>").concat(E(m.b.title), "</b><span>\u1308\u133D ").concat(E(m.page)).concat(m.note ? " — " + E(m.note) : "", "</span></div><button class=\"del\" data-del=\"").concat(m.t, "\">\u2715</button></div>"); }).join("");
+        $("#savEmpty").hidden = !!(list.length || mk.length);
+        $("#pst1").textContent = list.length;
+        $("#pst2").textContent = mk.length;
+    }
+    $("#markList").onclick = function (e) {
+        var d = e.target.closest(".del");
+        if (d) {
+            MARKS = MARKS.filter(function (m) { return String(m.t) !== d.dataset.del; });
+            persist();
+            renderSaved();
+            return;
+        }
+        var el = e.target.closest(".mk");
+        if (!el)
+            return;
+        var m = MARKS.find(function (x) { return String(x.t) === el.dataset.t; });
+        if (m)
+            openBook(m.id, m);
+    };
+    function renderAuthors() {
+        var m = new Map();
+        BOOKS.forEach(function (b) { var n = String(b.author || "").trim().replace(/\s+/g, " "); if (!n)
+            return; if (!m.has(n))
+            m.set(n, []); m.get(n).push(b); });
+        AUTH = __spreadArray([], __read(m), false).map(function (_a) {
+            var _b = __read(_a, 2), name = _b[0], books = _b[1];
+            return ({ name: name, books: books });
+        }).sort(function (a, b) { return a.name.localeCompare(b.name, "am"); });
+        $("#autList").innerHTML = AUTH.length ? AUTH.map(function (a, i) { return "<div class=\"au\" data-i=\"".concat(i, "\"><div class=\"av\">").concat(E(__spreadArray([], __read(a.name), false)[0]), "</div><div class=\"tx\"><b>").concat(E(a.name), "</b><span>").concat(a.books.length, " \u1218\u133B\u1215\u134D\u1275</span></div><div class=\"go\">\u203A</div></div>"); }).join("") : '<div class="empty">ገና ደራሲ የለም</div>';
+        showAuthor(curAuthName);
+    }
+    function showAuthor(name) {
+        var a = AUTH.find(function (x) { return x.name === name; });
+        curAuthName = a ? name : "";
+        $("#autList").hidden = !!a;
+        $("#autDet").hidden = !a;
+        if (a) {
+            $("#autName").textContent = a.name + " — " + a.books.length + " መጻሕፍት";
+            $("#autGrid").innerHTML = a.books.map(function (b) { return card(b); }).join("");
+        }
+    }
+    $("#autList").onclick = function (e) { var el = e.target.closest(".au"); if (el && AUTH[+el.dataset.i])
+        showAuthor(AUTH[+el.dataset.i].name); };
+    $("#autBack").onclick = function () { return showAuthor(""); };
+    $("#bm").onclick = function () { if (!curBook)
+        return; $("#bsheet").hidden = false; $("#bpage").focus(); };
+    $("#bcancel").onclick = function () { $("#bsheet").hidden = true; };
+    $("#bsave").onclick = function () {
+        var page = parseInt($("#bpage").value, 10);
+        if (!curBook || !page || page < 1) {
+            $("#bpage").focus();
+            return;
+        }
+        MARKS.unshift({ id: String(curBook.id), page: page, note: $("#bnote").value.trim(), t: Date.now() });
+        persist();
+        renderSaved();
+        $("#bpage").value = "";
+        $("#bnote").value = "";
+        $("#bsheet").hidden = true;
+        var n = $("#rnote");
+        n.hidden = false;
+        n.textContent = "✅ ገጽ " + page + " ተመዝግቧል — በ'የተቀመጡ' ትር ውስጥ ያገኙታል";
+    };
+    $("#abtLogo").src = $("#logo").src;
+    var APP_LINK = "https://www.appcreator24.com/app4197592-bstjau";
+    function toast(msg) { var t = $("#toast"); t.textContent = msg; t.hidden = false; clearTimeout(toast.t); toast.t = setTimeout(function () { t.hidden = true; }, 2800); }
+    function copyText(txt) {
+        return __awaiter(this, void 0, void 0, function () {
+            var e_3, ta, ok;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 3, , 4]);
+                        if (!(navigator.clipboard && window.isSecureContext)) return [3 /*break*/, 2];
+                        return [4 /*yield*/, navigator.clipboard.writeText(txt)];
+                    case 1:
+                        _a.sent();
+                        return [2 /*return*/, true];
+                    case 2: return [3 /*break*/, 4];
+                    case 3:
+                        e_3 = _a.sent();
+                        return [3 /*break*/, 4];
+                    case 4:
+                        try {
+                            ta = document.createElement("textarea");
+                            ta.value = txt;
+                            ta.setAttribute("readonly", "");
+                            ta.style.cssText = "position:fixed;top:0;left:0;opacity:0;-webkit-user-select:text;user-select:text";
+                            document.body.appendChild(ta);
+                            ta.focus();
+                            ta.select();
+                            ta.setSelectionRange(0, txt.length);
+                            ok = document.execCommand("copy");
+                            ta.remove();
+                            return [2 /*return*/, ok];
+                        }
+                        catch (e) {
+                            return [2 /*return*/, false];
+                        }
+                        return [2 /*return*/];
+                }
+            });
+        });
+    }
+    function openLink(u) {
+        if (TG && /^https?:/.test(u)) {
+            if (/^https:\/\/t\.me\//.test(u) && TG.openTelegramLink)
+                TG.openTelegramLink(u);
+            else
+                TG.openLink(u);
+            return;
+        }
+        location.href = u;
+    }
+    $$("#abt a[data-ext]").forEach(function (a) { return a.onclick = function (e) { return __awaiter(_this, void 0, void 0, function () {
+        var cp, _a;
+        return __generator(this, function (_b) {
+            switch (_b.label) {
+                case 0:
+                    e.preventDefault();
+                    cp = e.target.closest(".cp");
+                    if (!cp) return [3 /*break*/, 2];
+                    _a = toast;
+                    return [4 /*yield*/, copyText(cp.dataset.copy)];
+                case 1:
+                    _a.apply(void 0, [(_b.sent()) ? "✅ ተቀድቷል" : "መቅዳት አልተቻለም — ሊንኩን በረጅሙ ተጭነው ይቅዱ"]);
+                    return [2 /*return*/];
+                case 2:
+                    openLink(a.href);
+                    return [2 /*return*/];
+            }
+        });
+    }); }; });
+    $("#shareLink").textContent = APP_LINK;
+    $("#share").onclick = function () { return __awaiter(_this, void 0, void 0, function () {
+        var ok;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, copyText(APP_LINK)];
+                case 1:
+                    ok = _a.sent();
+                    toast(ok ? "✅ ሊንኩ ተቀድቷል — አሁን መለጠፍ ይችላሉ" : "መቅዳት አልተቻለም — ከታች ያለውን ሊንክ በረጅሙ ተጭነው ይቅዱ");
+                    return [2 /*return*/];
+            }
+        });
+    }); };
+    function setGreet() {
+        var h = new Date().getHours(), n = ($("#name").value || "").trim();
+        $("#hgreet").textContent = h < 12 ? "እንደምን አደሩ" : h < 18 ? "እንደምን ዋሉ" : "እንደምን አመሸዎት";
+        $("#hname").textContent = n || "የንባብ ወዳጅ";
+    }
+    setGreet();
+    $("#name").addEventListener("input", setGreet);
+    (function () {
+        var sp = $("#splash");
+        $("#splashLogo").src = $("#logo").src;
+        setTimeout(function () { sp.classList.add("out"); setTimeout(function () { return sp.remove(); }, 600); }, TG ? 1000 : 2200);
+    })();
+    /* ═══════════════════════════════════════════════
+       አዲስ፦ ምዝገባ · መግቢያ · ፕሮፋይል · ቅንብሮች
+       ═══════════════════════════════════════════════ */
+    var GRADES = [["all", "ሁሉም ክፍሎች"], ["1-4", "1–4ኛ ክፍል"], ["5-8", "5–8ኛ ክፍል"], ["9-10", "9–10ኛ ክፍል"], ["11-12", "11–12ኛ ክፍል"], ["uni", "ዩኒቨርሲቲ"]];
+    var gradeLbl = function (g) { return (GRADES.find(function (x) { return x[0] === g; }) || [0, "የተማሪ"])[1]; };
+    var sgrade = "all";
+    $("#sgr").innerHTML = GRADES.map(function (_a) {
+        var _b = __read(_a, 2), k = _b[0], l = _b[1];
+        return "<div class=\"chip".concat(k === "all" ? " on" : "", "\" data-g=\"").concat(k, "\">").concat(ico(k === "all" ? "all" : "kids")).concat(l, "</div>");
+    }).join("");
+    $$("#sgr .chip").forEach(function (c) { return c.onclick = function () { sgrade = c.dataset.g; $$("#sgr .chip").forEach(function (x) { return x.classList.toggle("on", x === c); }); renderStu(); }; });
+    function renderStu() {
+        var q = $("#sq").value.trim().toLowerCase();
+        var l = BOOKS.filter(function (b) { return b.student && (sgrade === "all" || b.grade === sgrade) && (b.title + b.author).toLowerCase().includes(q); });
+        $("#sgrid").innerHTML = l.length ? l.map(function (b) { return card(b); }).join("") : '<div class="empty" style="grid-column:1/-1">ገና የተማሪ መጽሐፍ አልተጨመረም</div>';
+    }
+    $("#sq").oninput = renderStu;
+    $("#agrade").innerHTML = GRADES.slice(1).map(function (_a) {
+        var _b = __read(_a, 2), k = _b[0], l = _b[1];
+        return "<option value=\"".concat(k, "\">").concat(l, "</option>");
+    }).join("");
+    var QUOTES = [
+        "“ንባብ ዓለምን የሚያሰፋ መስኮት ነው።”",
+        "“አንድ መጽሐፍ፣ አንድ አዲስ ዓለም።”",
+        "“ዛሬ የሚያነቡት ገጽ ነገ የሚኖሩትን ሕይወት ይቀርጻል።”",
+        "“አንባቢ ሺህ ሕይወት ይኖራል፤ የማያነብ አንድ ብቻ።”",
+        "“በቀን አሥር ደቂቃ ንባብ — በዓመት ብዙ መጻሕፍት።”",
+        "“ሀገርኛ ታሪክን ያንብቡ፤ የተተረጎሙትን ይጎብኙ።”"
+    ];
+    var qi = 0;
+    var aq = $("#aq");
+    aq.textContent = QUOTES[0];
+    setInterval(function () { aq.style.opacity = 0; setTimeout(function () { qi = (qi + 1) % QUOTES.length; aq.textContent = QUOTES[qi]; aq.style.opacity = 1; }, 400); }, 4500);
+    $("#aLogo").src = $("#logo").src;
+    var guest = false, user = null, authSeen = false;
+    var wasAuthed = false;
+    try {
+        guest = false;
+        localStorage.removeItem("nh_guest");
+        wasAuthed = localStorage.getItem("nh_authed") === "1";
+    }
+    catch (e) { }
+    if (guest || wasAuthed)
+        $("#authpg").classList.remove("on");
+    var initial = function (n) { return __spreadArray([], __read((n || "?").trim()), false)[0] || "?"; };
+    var errMsg = function (e) {
+        var c = (e && e.code) || "";
+        if (/email-already/.test(c))
+            return "ይህ ኢሜይል ቀድሞ ተመዝግቧል";
+        if (/invalid-email/.test(c))
+            return "ኢሜይሉ ትክክል አይደለም";
+        if (/weak-password/.test(c))
+            return "ይለፍ ቃል ቢያንስ 6 ቁምፊ መሆን አለበት";
+        if (/invalid-credential|wrong-password|user-not-found/.test(c))
+            return "ኢሜይል ወይም ይለፍ ቃል ትክክል አይደለም";
+        if (/too-many/.test(c))
+            return "ብዙ ሙከራ ተደርጓል — ቆይተው ይሞክሩ";
+        if (/network/.test(c))
+            return "ኢንተርኔትዎን ያረጋግጡ";
+        if (/operation-not-allowed|configuration-not-found/.test(c))
+            return "ምዝገባ በ Firebase አልነቃም — Firebase Console → Authentication → Sign-in method → Email/Password ን Enable ያድርጉ (" + c + ")";
+        if (/api-key|invalid-api/.test(c))
+            return "የ Firebase API key ችግር አለ (" + c + ")";
+        if (/unauthorized-domain|requests-from-referer|app-not-authorized/.test(c))
+            return "ይህ ድረ-ገጽ አድራሻ በ Firebase ውስጥ አልተፈቀደም — Authentication → Settings → Authorized domains ውስጥ ያክሉ (" + c + ")";
+        return "ስህተት ተፈጥሯል (" + (c || (e && e.message) || "unknown") + ")";
+    };
+    var showErr = function (id, m) { var e = $(id); e.textContent = m; e.hidden = !m; };
+    function paintHead() {
+        var b = $("#pbtn");
+        b.innerHTML = user ? E(initial(user.displayName || user.email)) : '<svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"/></svg>';
+    }
+    function renderProfile() {
+        $("#pav").textContent = user ? initial(user.displayName || user.email) : "👤";
+        $("#pnm").textContent = user ? (user.displayName || "አንባቢ") : "እንግዳ";
+        $("#pem").textContent = user ? user.email : "ገና አልገቡም";
+        $("#plogin").hidden = !!user;
+        $("#plogout").hidden = !user;
+        $("#sgName").hidden = !user;
+        $("#snm").value = user && user.displayName || "";
+    }
+    function onAuth(u) {
+        if (!u)
+            u = localUser();
+        user = u;
+        authSeen = true;
+        paintHead();
+        renderProfile();
+        if (u) {
+            try {
+                localStorage.setItem("nh_authed", "1");
+            }
+            catch (e) { }
+            $("#authpg").classList.remove("on");
+            var n = (u.displayName || "").slice(0, 20);
+            if (n) {
+                $("#name").value = n;
+                try {
+                    localStorage.setItem("nh_name", n);
+                }
+                catch (e) { }
+                setGreet();
+            }
+        }
+        else if (!guest) {
+            var w = false;
+            try {
+                w = localStorage.getItem("nh_authed") === "1";
+            }
+            catch (e) { }
+            openAuth(w ? "login" : "reg");
+        }
+    }
+    function openAuth(tab) {
+        $("#authpg").classList.add("on");
+        $$(".atabs button").forEach(function (x) { return x.classList.toggle("on", x.dataset.t === tab); });
+        $("#fLogin").hidden = tab !== "login";
+        $("#fReg").hidden = tab !== "reg";
+        showErr("#lerr", "");
+        showErr("#rerr", "");
+    }
+    $$(".atabs button").forEach(function (b) { return b.onclick = function () { return openAuth(b.dataset.t); }; });
+    $("#pbtn").onclick = function () { renderProfile(); $("#prof").classList.add("on"); };
+    $("#pclose").onclick = function () { return $("#prof").classList.remove("on"); };
+    $("#plogin").onclick = function () { $("#prof").classList.remove("on"); openAuth("login"); };
+    $("#pset").onclick = function () { renderProfile(); applyZoom(); $("#setp").classList.add("on"); };
+    $("#sclose").onclick = function () { return $("#setp").classList.remove("on"); };
+    function withT(p, ms) { return Promise.race([p, new Promise(function (_, rj) { setTimeout(function () { rj({ code: "timeout" }); }, ms); })]); }
+    var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    var LU = function () { try {
+        return JSON.parse(localStorage.getItem("nh_lusers") || "[]");
+    }
+    catch (e) {
+        return [];
+    } };
+    var saveLU = function (a) { try {
+        localStorage.setItem("nh_lusers", JSON.stringify(a));
+    }
+    catch (e) { } };
+    function sha(s) {
+        return __awaiter(this, void 0, void 0, function () {
+            var b, e_4, h, s_1, s_1_1, c;
+            var e_5, _a;
+            return __generator(this, function (_b) {
+                switch (_b.label) {
+                    case 0:
+                        _b.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, crypto.subtle.digest("SHA-256", new TextEncoder().encode(s))];
+                    case 1:
+                        b = _b.sent();
+                        return [2 /*return*/, __spreadArray([], __read(new Uint8Array(b)), false).map(function (x) { return x.toString(16).padStart(2, "0"); }).join("")];
+                    case 2:
+                        e_4 = _b.sent();
+                        h = 0;
+                        try {
+                            for (s_1 = __values(s), s_1_1 = s_1.next(); !s_1_1.done; s_1_1 = s_1.next()) {
+                                c = s_1_1.value;
+                                h = (h * 31 + c.charCodeAt(0)) | 0;
+                            }
+                        }
+                        catch (e_5_1) { e_5 = { error: e_5_1 }; }
+                        finally {
+                            try {
+                                if (s_1_1 && !s_1_1.done && (_a = s_1.return)) _a.call(s_1);
+                            }
+                            finally { if (e_5) throw e_5.error; }
+                        }
+                        return [2 /*return*/, "x" + h];
+                    case 3: return [2 /*return*/];
+                }
+            });
+        });
+    }
+    function localUser() {
+        try {
+            var em_1 = localStorage.getItem("nh_lsess");
+            if (!em_1)
+                return null;
+            var a = LU().find(function (x) { return x.email === em_1; });
+            return a ? { displayName: a.name, email: a.email, _local: true } : null;
+        }
+        catch (e) {
+            return null;
+        }
+    }
+    function startLocal(a) { try {
+        localStorage.setItem("nh_lsess", a.email);
+    }
+    catch (e) { } onAuth(localUser()); }
+    $("#lbtn").onclick = function () { return __awaiter(_this, void 0, void 0, function () {
+        var em, pw, ok, err, e_6, h_1, a;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    em = $("#lem").value.trim().toLowerCase(), pw = $("#lpw").value;
+                    if (!em || !pw) {
+                        showErr("#lerr", "ኢሜይል እና ይለፍ ቃል ያስገቡ");
+                        return [2 /*return*/];
+                    }
+                    showErr("#lerr", "");
+                    $("#lbtn").disabled = true;
+                    ok = false, err = null;
+                    if (!auth) return [3 /*break*/, 4];
+                    _a.label = 1;
+                case 1:
+                    _a.trys.push([1, 3, , 4]);
+                    return [4 /*yield*/, withT(F.signInWithEmailAndPassword(auth, em, pw), 8000)];
+                case 2:
+                    _a.sent();
+                    ok = true;
+                    return [3 /*break*/, 4];
+                case 3:
+                    e_6 = _a.sent();
+                    err = (e_6 && e_6.code === "timeout") ? null : e_6;
+                    return [3 /*break*/, 4];
+                case 4:
+                    if (!!ok) return [3 /*break*/, 6];
+                    return [4 /*yield*/, sha(em + "|" + pw)];
+                case 5:
+                    h_1 = _a.sent(), a = LU().find(function (x) { return x.email === em && x.h === h_1; });
+                    if (a) {
+                        startLocal(a);
+                        ok = true;
+                    }
+                    _a.label = 6;
+                case 6:
+                    if (ok) {
+                        $("#lpw").value = "";
+                        toast("✅ እንኳን ደህና መጡ!");
+                    }
+                    else
+                        showErr("#lerr", err ? errMsg(err) : "መለያ አልተገኘም — መጀመሪያ ይመዝገቡ");
+                    $("#lbtn").disabled = false;
+                    return [2 /*return*/];
+            }
+        });
+    }); };
+    $("#lforgot").onclick = function () {
+        var em = $("#lem").value.trim();
+        if (!auth || !em) {
+            showErr("#lerr", "መጀመሪያ ኢሜይልዎን ይጻፉ");
+            return;
+        }
+        F.sendPasswordResetEmail(auth, em).then(function () { return showErr("#lerr", "✅ የይለፍ ቃል መቀየሪያ ሊንክ ወደ ኢሜይልዎ ተልኳል"); }).catch(function (e) { return showErr("#lerr", errMsg(e)); });
+    };
+    $("#rbtn").onclick = function () { return __awaiter(_this, void 0, void 0, function () {
+        var nm, em, p1, p2, done, c, _1, e_7, a, acc;
+        var _a;
+        return __generator(this, function (_b) {
+            switch (_b.label) {
+                case 0:
+                    nm = $("#rnm").value.trim(), em = $("#rem").value.trim().toLowerCase(), p1 = $("#rpw").value, p2 = $("#rpw2").value;
+                    if (!nm || !em || !p1) {
+                        showErr("#rerr", "ሁሉንም መስኮች ይሙሉ");
+                        return [2 /*return*/];
+                    }
+                    if (!EMAIL_RE.test(em)) {
+                        showErr("#rerr", "ኢሜይሉ ትክክል አይደለም");
+                        return [2 /*return*/];
+                    }
+                    if (p1.length < 6) {
+                        showErr("#rerr", "ይለፍ ቃል ቢያንስ 6 ቁምፊ መሆን አለበት");
+                        return [2 /*return*/];
+                    }
+                    if (p1 !== p2) {
+                        showErr("#rerr", "ሁለቱ ይለፍ ቃሎች አይመሳሰሉም");
+                        return [2 /*return*/];
+                    }
+                    showErr("#rerr", "");
+                    $("#rbtn").disabled = true;
+                    done = false;
+                    if (!auth) return [3 /*break*/, 8];
+                    _b.label = 1;
+                case 1:
+                    _b.trys.push([1, 7, , 8]);
+                    return [4 /*yield*/, withT(F.createUserWithEmailAndPassword(auth, em, p1), 8000)];
+                case 2:
+                    c = _b.sent();
+                    _b.label = 3;
+                case 3:
+                    _b.trys.push([3, 5, , 6]);
+                    return [4 /*yield*/, F.updateProfile(c.user, { displayName: nm })];
+                case 4:
+                    _b.sent();
+                    return [3 /*break*/, 6];
+                case 5:
+                    _1 = _b.sent();
+                    return [3 /*break*/, 6];
+                case 6:
+                    onAuth(auth.currentUser);
+                    done = true;
+                    return [3 /*break*/, 8];
+                case 7:
+                    e_7 = _b.sent();
+                    if (/email-already|invalid-email|weak-password/.test(e_7.code || "")) {
+                        showErr("#rerr", errMsg(e_7));
+                        $("#rbtn").disabled = false;
+                        return [2 /*return*/];
+                    }
+                    console.warn("Firebase signup:", e_7.code, e_7.message);
+                    return [3 /*break*/, 8];
+                case 8:
+                    if (!!done) return [3 /*break*/, 10];
+                    a = LU();
+                    if (a.some(function (x) { return x.email === em; })) {
+                        showErr("#rerr", "ይህ ኢሜይል ቀድሞ ተመዝግቧል — 'ግባ' ን ይጠቀሙ");
+                        $("#rbtn").disabled = false;
+                        return [2 /*return*/];
+                    }
+                    _a = { email: em, name: nm };
+                    return [4 /*yield*/, sha(em + "|" + p1)];
+                case 9:
+                    acc = (_a.h = _b.sent(), _a);
+                    a.push(acc);
+                    saveLU(a);
+                    startLocal(acc);
+                    _b.label = 10;
+                case 10:
+                    toast("🎉 እንኳን ደህና መጡ፣ " + nm + "!");
+                    $("#rpw").value = $("#rpw2").value = "";
+                    $("#rbtn").disabled = false;
+                    return [2 /*return*/];
+            }
+        });
+    }); };
+    $("#plogout").onclick = function () { return __awaiter(_this, void 0, void 0, function () {
+        var e_8;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    if (!confirm("ከመለያዎ ይውጡ?"))
+                        return [2 /*return*/];
+                    try {
+                        localStorage.removeItem("nh_authed");
+                        localStorage.removeItem("nh_lsess");
+                    }
+                    catch (e) { }
+                    _a.label = 1;
+                case 1:
+                    _a.trys.push([1, 4, , 5]);
+                    if (!(auth && auth.currentUser)) return [3 /*break*/, 3];
+                    return [4 /*yield*/, F.signOut(auth)];
+                case 2:
+                    _a.sent();
+                    _a.label = 3;
+                case 3: return [3 /*break*/, 5];
+                case 4:
+                    e_8 = _a.sent();
+                    return [3 /*break*/, 5];
+                case 5:
+                    $("#prof").classList.remove("on");
+                    $("#setp").classList.remove("on");
+                    onAuth(null);
+                    return [2 /*return*/];
+            }
+        });
+    }); };
+    $("#snsave").onclick = function () { return __awaiter(_this, void 0, void 0, function () {
+        var n, a, x, e_9;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    n = $("#snm").value.trim();
+                    if (!user || !n) {
+                        $("#snm").focus();
+                        return [2 /*return*/];
+                    }
+                    _a.label = 1;
+                case 1:
+                    _a.trys.push([1, 5, , 6]);
+                    if (!user._local) return [3 /*break*/, 2];
+                    a = LU(), x = a.find(function (y) { return y.email === user.email; });
+                    if (x) {
+                        x.name = n;
+                        saveLU(a);
+                    }
+                    user = localUser();
+                    return [3 /*break*/, 4];
+                case 2: return [4 /*yield*/, F.updateProfile(auth.currentUser, { displayName: n })];
+                case 3:
+                    _a.sent();
+                    _a.label = 4;
+                case 4:
+                    $("#name").value = n.slice(0, 20);
+                    try {
+                        localStorage.setItem("nh_name", n.slice(0, 20));
+                    }
+                    catch (e) { }
+                    paintHead();
+                    renderProfile();
+                    setGreet();
+                    alert("✅ ስምዎ ተቀይሯል");
+                    return [3 /*break*/, 6];
+                case 5:
+                    e_9 = _a.sent();
+                    alert("መቀየር አልተቻለም");
+                    return [3 /*break*/, 6];
+                case 6: return [2 /*return*/];
+            }
+        });
+    }); };
+    $("#sclrsv").onclick = function () { if (confirm("ሁሉም የተቀመጡ መጻሕፍት ይጽዱ?")) {
+        SAVED = [];
+        persist();
+        refreshAll();
+    } };
+    $("#sclrmk").onclick = function () { if (confirm("ሁሉም የተመዘገቡ ገጾች ይጽዱ?")) {
+        MARKS = [];
+        persist();
+        renderSaved();
+    } };
+    paintHead();
+    renderProfile();
+    render();
+    renderStu();
+    renderSaved();
+    renderAuthors();
+    initFirebase();
+    var DARK = false;
+    try {
+        DARK = localStorage.getItem("nh_dark") === "1";
+    }
+    catch (e) { }
+    function setDark(on) {
+        DARK = !!on;
+        try {
+            localStorage.setItem("nh_dark", DARK ? "1" : "0");
+        }
+        catch (e) { }
+        document.documentElement.setAttribute("data-theme", DARK ? "dark" : "light");
+        var c = DARK ? "#0f1a16" : "#ffffff", mt = document.querySelector('meta[name=theme-color]');
+        if (mt)
+            mt.setAttribute("content", c);
+        if (TG) {
+            try {
+                TG.setHeaderColor(c);
+                TG.setBackgroundColor(c);
+            }
+            catch (e) { }
+        }
+        $("#sdark").checked = DARK;
+    }
+    $("#sdark").onchange = function (e) { return setDark(e.target.checked); };
+    $("#slang").onchange = function (e) { return setLang(e.target.value); };
+    $("#alang").onchange = function (e) { return setLang(e.target.value); };
+    setDark(DARK);
+    setLang(LANG);
+})();
+
+</script>
+<script>
+(function(){
+ var AS={logo:"data:image/jpeg;base64,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",bg:"data:image/webp;base64,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",ic:["data:image/webp;base64,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", "data:image/webp;base64,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", "data:image/webp;base64,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", "data:image/webp;base64,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"],fb:"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%232f7a66'/%3E%3Cpath d='M22 32h24c4 0 4 3 4 3v36s0-4-4-4H22zM78 32H54c-4 0-4 3-4 3v36s0-4 4-4h24z' fill='%23fff'/%3E%3C/svg%3E"};
+ function set(id){var e=document.getElementById(id);if(!e)return;e.addEventListener("error",function(){if(!e.__f){e.__f=1;e.src=AS.fb}});e.src=AS.logo}
+ set("logo");set("splashLogo");set("aLogo");set("abtLogo");
+ var im=document.querySelectorAll("img[data-ic]");for(var i=0;i<im.length;i++){im[i].src=AS.ic[+im[i].getAttribute("data-ic")]||im[i].src}
+ var nv=document.querySelector("nav");if(nv)nv.style.backgroundImage="url("+AS.bg+")";
+})();
+</script>
+</body>
+</html>
